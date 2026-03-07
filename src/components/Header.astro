@@ -3,14 +3,32 @@
 <header class="site-header">
   <div class="header-inner">
     <a href="/" class="header-logo">
-      <span class="logo-mono">wiki.</span>
-      <span class="logo-name">aspergerparaasperger</span>
+      <span class="logo-wiki">wiki</span>
+      <span class="logo-sep">.</span>
+      <span class="logo-brand">aspergerparaasperger</span>
     </a>
     <nav class="header-nav">
       <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
+      <a href="https://revista.aspergerparaasperger.org">Revista</a>
       <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
-      <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/" class="nav-cta">Club</a>
+      <a
+        href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/"
+        class="nav-cta"
+      >
+        Unirme al Club
+      </a>
     </nav>
+    <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
+    <a href="https://revista.aspergerparaasperger.org">Revista</a>
+    <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
+    <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/">Club social</a>
+    <a href="https://www.aspergerparaasperger.org/plan-embajador-asperger-para-asperger/">Inclusión laboral</a>
+    <a href="https://www.autenticamentecapaces.work">Bolsa de empleo</a>
   </div>
 </header>
 
@@ -19,79 +37,138 @@
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10,14,26,0.88);
+  background: rgba(255,255,255,0.93);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-subtle);
+  box-shadow: var(--shadow-xs);
 }
 
 .header-inner {
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
-  height: 60px;
+  height: 64px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
 
 .header-logo {
-  text-decoration: none;
   display: flex;
   align-items: baseline;
   gap: 1px;
+  text-decoration: none;
+  flex-shrink: 0;
 }
 
-.logo-mono {
-  font-family: var(--font-display);
+.logo-wiki {
+  font-family: var(--font-mono);
   font-size: 13px;
-  color: var(--accent-teal);
-  letter-spacing: 0.05em;
+  font-weight: 700;
+  color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
-.logo-name {
-  font-family: var(--font-display);
+.logo-sep {
+  font-family: var(--font-mono);
+  font-size: 13px;
+  color: var(--border-mid);
+}
+
+.logo-brand {
+  font-family: var(--font-mono);
   font-size: 13px;
   color: var(--text-muted);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.01em;
 }
 
 .header-nav {
   display: flex;
   align-items: center;
-  gap: 24px;
+  gap: 28px;
 }
 
 .header-nav a {
-  font-size: 13px;
+  font-size: 14px;
+  font-weight: 500;
   color: var(--text-secondary);
   text-decoration: none;
   transition: color 0.2s;
-  letter-spacing: 0.02em;
-  font-family: var(--font-body);
+  white-space: nowrap;
+  border-bottom: none;
 }
 
 .header-nav a:hover { color: var(--text-primary); }
 
 .nav-cta {
-  background: var(--accent-teal) !important;
-  color: var(--bg-primary) !important;
-  padding: 6px 14px;
-  border-radius: var(--radius-sm);
+  background: var(--accent) !important;
+  color: white !important;
+  padding: 8px 18px !important;
+  border-radius: var(--radius-md) !important;
   font-weight: 600 !important;
-  font-size: 12px !important;
-  letter-spacing: 0.05em;
-  transition: opacity 0.2s !important;
+  font-size: 13px !important;
+  transition: background 0.2s !important;
+  white-space: nowrap;
 }
 
 .nav-cta:hover {
-  opacity: 0.85;
-  color: var(--bg-primary) !important;
+  background: var(--accent-dark) !important;
+  color: white !important;
 }
 
-@media (max-width: 640px) {
-  .header-nav { gap: 16px; }
-  .header-nav a:not(.nav-cta) { display: none; }
-  .logo-name { display: none; }
+/* Mobile */
+.mobile-menu-btn {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 4px;
+}
+
+.mobile-menu-btn span {
+  display: block;
+  width: 22px;
+  height: 2px;
+  background: var(--text-secondary);
+  border-radius: 2px;
+  transition: all 0.2s;
+}
+
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  border-top: 1px solid var(--border-subtle);
+  background: white;
+  padding: 8px 24px 16px;
+}
+
+.mobile-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  padding: 10px 0;
+  border-bottom: 1px solid var(--border-subtle);
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-menu a:last-child { border-bottom: none; }
+.mobile-menu a:hover { color: var(--accent); }
+
+@media (max-width: 768px) {
+  .header-nav { display: none; }
+  .mobile-menu-btn { display: flex; }
+  .mobile-menu.open { display: flex; }
+  .logo-brand { display: none; }
 }
 </style>
+
+<script>
+  const btn = document.getElementById('mobileMenuBtn');
+  const menu = document.getElementById('mobileMenu');
+  btn?.addEventListener('click', () => menu?.classList.toggle('open'));
+</script>

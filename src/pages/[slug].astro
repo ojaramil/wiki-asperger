@@ -14,10 +14,11 @@ const { entrada } = Astro.props;
 const { Content } = await entrada.render();
 ---
 
-<WikiLayout 
+<WikiLayout
   title={entrada.data.title}
   description={entrada.data.description}
   slug={entrada.slug}
+  cluster={entrada.data.cluster}
   bloques={entrada.data.bloques}
   schema_questions={entrada.data.schema_questions}
 >

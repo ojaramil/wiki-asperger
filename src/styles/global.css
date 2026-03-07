@@ -1,59 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap');
+
 /* =============================================
    ASPERGER PARA ASPERGER — WIKI DESIGN SYSTEM
+   Paleta: clara · Jakarta + Space Mono · Teal
    ============================================= */
 
-@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,300&display=swap');
-
-/* ── Variables ─────────────────────────────── */
 :root {
-  /* Fondos */
-  --bg-primary:    #0a0e1a;
-  --bg-secondary:  #111827;
-  --bg-tertiary:   #1a2234;
+  /* ── Fondos ── */
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8fafc;
+  --bg-tertiary: #f1f5f9;
+  --bg-hover: #e2e8f0;
 
-  /* Bordes */
-  --border-subtle: #1e2d45;
-  --border-mid:    #2a3f5f;
+  /* ── Bordes ── */
+  --border-subtle: #e2e8f0;
+  --border-mid: #cbd5e1;
+  --border-strong: #94a3b8;
 
-  /* Texto */
-  --text-primary:  #e2e8f0;
-  --text-secondary:#94a3b8;
-  --text-muted:    #64748b;
+  /* ── Texto ── */
+  --text-primary: #0f172a;
+  --text-secondary: #334155;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
 
-  /* Acentos por cluster */
-  --accent-teal:   #14b8a6;
-  --accent-blue:   #3b82f6;
-  --accent-purple: #8b5cf6;
-  --accent-amber:  #f59e0b;
-  --accent-rose:   #f43f5e;
-  --accent-green:  #22c55e;
-  --accent-orange: #fb923c;
-  --accent-fuchsia:#e879f9;
+  /* ── Acento teal — color del proyecto ── */
+  --accent: #0d9488;
+  --accent-light: #ccfbf1;
+  --accent-dark: #0f766e;
 
-  /* Tipografía */
-  --font-display: 'Space Mono', monospace;
-  --font-body:    'DM Sans', sans-serif;
+  /* ── Colores por cluster ── */
+  --c-fundamentos: #2563eb;
+  --c-comunicacion: #0d9488;
+  --c-experiencia: #7c3aed;
+  --c-social: #d97706;
+  --c-pareja: #e11d48;
+  --c-trabajo: #16a34a;
+  --c-diagnostico: #ea580c;
+  --c-regulacion: #9333ea;
 
-  /* Radios */
-  --radius-sm:  6px;
-  --radius-md:  10px;
-  --radius-lg:  16px;
+  /* ── Tipografía ── */
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Space Mono', monospace;
 
-  /* Sombras */
-  --shadow-sm:   0 1px 3px rgba(0,0,0,0.4);
-  --shadow-md:   0 4px 16px rgba(0,0,0,0.5);
-  --shadow-glow: 0 0 24px rgba(20,184,166,0.15);
+  /* ── Radios ── */
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
 
-  /* Legacy aliases — compatibilidad con componentes previos */
-  --primary:   #14b8a6;
-  --secondary: #94a3b8;
-  --bg:        #0a0e1a;
-  --text:      #e2e8f0;
-  --light:     #111827;
+  /* ── Sombras ── */
+  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.06);
+  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
+  --shadow-md: 0 4px 6px rgba(15, 23, 42, 0.07), 0 2px 4px rgba(15, 23, 42, 0.04);
+  --shadow-lg: 0 10px 15px rgba(15, 23, 42, 0.08), 0 4px 6px rgba(15, 23, 42, 0.04);
+
+  /* ── Legacy aliases (compatibilidad) ── */
+  --primary: #0d9488;
+  --secondary: #64748b;
+  --bg: #ffffff;
+  --text: #0f172a;
+  --light: #f8fafc;
 }
 
 /* ── Reset ─────────────────────────────────── */
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -74,142 +86,79 @@ body {
   min-height: 100vh;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--accent-dark);
+}
+
 /* ── Scrollbar ─────────────────────────────── */
-::-webkit-scrollbar { width: 6px; }
-::-webkit-scrollbar-track { background: var(--bg-primary); }
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-secondary);
+}
+
 ::-webkit-scrollbar-thumb {
   background: var(--border-mid);
   border-radius: 3px;
 }
-::-webkit-scrollbar-thumb:hover { background: var(--accent-teal); }
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent);
+}
 
 /* ── Selección ─────────────────────────────── */
 ::selection {
-  background: var(--accent-teal);
-  color: var(--bg-primary);
+  background: var(--accent-light);
+  color: var(--accent-dark);
 }
 
-/* ── Wiki content area ─────────────────────── */
+/* ── Wiki content (RootLayout main) ────────── */
 main.wiki-content {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
   background: transparent;
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
   box-shadow: none;
   border-radius: 0;
 }
 
-/* ── Article typography ────────────────────── */
-.wiki-article h1 {
-  font-family: var(--font-display);
-  font-size: clamp(22px, 4vw, 34px);
-  font-weight: 700;
-  color: var(--text-primary);
-  line-height: 1.2;
-  margin-bottom: 12px;
-  letter-spacing: -0.02em;
-}
-
-.wiki-article h2 {
-  font-family: var(--font-display);
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--cluster-accent, var(--accent-teal));
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 40px;
-  margin-bottom: 14px;
-  padding-bottom: 8px;
-  border-bottom: 1px solid var(--border-subtle);
-}
-
-.wiki-article h3 {
-  font-family: var(--font-display);
-  font-size: 13px;
-  color: var(--text-primary);
-  margin-top: 24px;
-  margin-bottom: 10px;
-}
-
-.wiki-article p {
-  color: var(--text-secondary);
-  margin-bottom: 16px;
-  font-size: 15px;
-  line-height: 1.8;
-}
-
-.wiki-article strong {
-  color: var(--text-primary);
-  font-weight: 600;
-}
-
-.wiki-article a {
-  color: var(--cluster-accent, var(--accent-teal));
-  text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
-}
-
-.wiki-article a:hover {
-  border-bottom-color: var(--cluster-accent, var(--accent-teal));
-}
-
-/* Primera definición destacada */
-.wiki-article > p:first-of-type {
-  font-size: 16px;
-  color: var(--text-primary);
-  line-height: 1.75;
-  padding: 20px 24px;
-  background: rgba(255,255,255,0.03);
-  border-left: 3px solid var(--cluster-accent, var(--accent-teal));
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  margin-bottom: 32px;
-}
-
-/* Listas */
-.wiki-article ul {
-  list-style: none;
-  margin-bottom: 16px;
-}
-
-.wiki-article ul li {
-  color: var(--text-secondary);
-  font-size: 15px;
-  padding: 5px 0 5px 22px;
-  position: relative;
-  line-height: 1.7;
-}
-
-.wiki-article ul li::before {
-  content: '→';
-  position: absolute;
-  left: 0;
-  color: var(--cluster-accent, var(--accent-teal));
-  font-size: 12px;
-  top: 7px;
-}
-
-/* HR */
-.wiki-article hr {
-  border: none;
-  border-top: 1px solid var(--border-subtle);
-  margin: 40px 0;
-}
-
-/* Nota clínica */
+/* ── Nota clínica ───────────────────────────── */
 .nota-clinica {
-  border-left: 3px solid var(--border-mid);
-  background: rgba(255,255,255,0.02);
-  padding: 14px 18px;
-  margin-top: 40px;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 14px 20px;
+  margin-top: 48px;
   font-size: 12px;
-  color: var(--text-muted);
-  font-family: var(--font-display);
+  color: var(--text-light);
   line-height: 1.6;
-  border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
 }
 
-/* Ecosystem blocks */
+.nota-clinica p {
+  margin: 0;
+  color: var(--text-light);
+  font-size: 12px;
+}
+
+.nota-clinica em {
+  font-style: italic;
+}
+
+/* ── Ecosystem blocks ───────────────────────── */
 .ecosystem-block {
   margin: 24px 0;
   padding: 20px 24px;
@@ -218,25 +167,31 @@ main.wiki-content {
   background: var(--bg-secondary);
 }
 
-.ecosystem-block h3 {
-  font-family: var(--font-display);
-  font-size: 10px;
-  color: var(--accent-teal);
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-bottom: 12px;
+.ecosystem-block h3,
+.ecosystem-block h2 {
+  font-size: 11px !important;
+  font-weight: 700 !important;
+  color: var(--accent) !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.1em !important;
+  margin-bottom: 12px !important;
+  border: none !important;
+  padding: 0 !important;
 }
 
 .ecosystem-block a {
   color: var(--text-secondary);
-  text-decoration: none;
   font-size: 14px;
-  transition: color 0.2s;
+  border-bottom: none;
 }
 
-.ecosystem-block a:hover { color: var(--accent-teal); }
+.ecosystem-block a:hover {
+  color: var(--accent);
+}
 
-/* ── Responsive ────────────────────────────── */
+/* ── Responsive base ────────────────────────── */
 @media (max-width: 640px) {
-  main.wiki-content { padding: 32px 20px 60px; }
+  body {
+    font-size: 15px;
+  }
 }

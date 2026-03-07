@@ -7,18 +7,31 @@ import '../styles/global.css';
 
 const { title, description, slug, cluster, bloques, schema_questions } = Astro.props;
 
-const clusterColors: Record<string, string> = {
-  'Fundamentos del perfil Asperger':  '#3b82f6',
-  'Comunicación Asperger':            '#14b8a6',
-  'Experiencia interna Asperger':     '#8b5cf6',
-  'Vida social Asperger':             '#f59e0b',
-  'Relaciones y pareja Asperger':     '#f43f5e',
-  'Trabajo y vida adulta Asperger':   '#22c55e',
-  'Diagnóstico Asperger':             '#fb923c',
-  'Regulación emocional Asperger':    '#e879f9',
+// Mapear cluster string completo (del frontmatter) → color
+const clusterColorMap: Record<string, string> = {
+  'Fundamentos del perfil Asperger':  '#2563eb',
+  'Comunicación Asperger':            '#0d9488',
+  'Experiencia interna Asperger':     '#7c3aed',
+  'Vida social Asperger':             '#d97706',
+  'Relaciones y pareja Asperger':     '#e11d48',
+  'Trabajo y vida adulta Asperger':   '#16a34a',
+  'Diagnóstico Asperger':             '#ea580c',
+  'Regulación emocional Asperger':    '#9333ea',
 };
 
-const accentColor = cluster ? (clusterColors[cluster] ?? '#14b8a6') : '#14b8a6';
+const clusterLabelMap: Record<string, string> = {
+  'Fundamentos del perfil Asperger':  'Fundamentos',
+  'Comunicación Asperger':            'Comunicación',
+  'Experiencia interna Asperger':     'Experiencia interna',
+  'Vida social Asperger':             'Vida social',
+  'Relaciones y pareja Asperger':     'Relaciones y pareja',
+  'Trabajo y vida adulta Asperger':   'Trabajo y vida adulta',
+  'Diagnóstico Asperger':             'Diagnóstico',
+  'Regulación emocional Asperger':    'Regulación emocional',
+};
+
+const clusterColor = cluster ? (clusterColorMap[cluster] ?? '#0d9488') : '#0d9488';
+const clusterLabel = cluster ? (clusterLabelMap[cluster] ?? cluster) : '';
 
 let faqSchema = '';
 if (schema_questions && schema_questions.length > 0) {
@@ -44,7 +57,7 @@ if (schema_questions && schema_questions.length > 0) {
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="canonical" href={`https://wiki.aspergerparaasperger.org/${slug}`} />
-  <meta property="og:title" content={title} />
+  <meta property="og:title" content={`${title} | Asperger para Asperger`} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={`https://wiki.aspergerparaasperger.org/${slug}`} />
   <meta property="og:type" content="article" />
@@ -63,44 +76,171 @@ if (schema_questions && schema_questions.length > 0) {
     }
   }
   `} />
-  
+
   {faqSchema && <script type="application/ld+json" set:html={faqSchema} />}
 </head>
 <body>
   <Header />
-  <main class="wiki-content">
-    <article class="wiki-article" style={`--cluster-accent: ${accentColor}`}>
-      <!-- Cluster badge -->
-      {cluster && (
-        <span class="cluster-badge" style={`--c: ${accentColor}`}>
-          ● {cluster}
-        </span>
-      )}
-      <slot />
-      <EcosistemaLinks bloques={bloques || []} />
-      <hr />
-      <NotaClinica />
-    </article>
+  <main>
+    <div class="wiki-container">
+      <article class="wiki-article" style={`--cluster-color: ${clusterColor}`}>
+
+        {clusterLabel && (
+          <div class="article-meta">
+            <span
+              class="cluster-badge"
+              style={`color: ${clusterColor}; background: ${clusterColor}18; border-color: ${clusterColor}35`}
+            >
+              ● {clusterLabel}
+            </span>
+          </div>
+        )}
+
+        <slot />
+
+        <EcosistemaLinks bloques={bloques || []} />
+        <NotaClinica />
+      </article>
+    </div>
   </main>
   <Footer />
 </body>
 </html>
 
 <style>
-/* Cluster badge */
+/* ── Contenedor ─────────────────────────────── */
+.wiki-container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 48px 24px 80px;
+}
+
+/* ── Badge de cluster ───────────────────────── */
+.article-meta {
+  margin-bottom: 24px;
+}
+
 .cluster-badge {
   display: inline-flex;
   align-items: center;
-  gap: 5px;
-  font-family: var(--font-display);
-  font-size: 10px;
-  color: var(--c);
-  background: color-mix(in srgb, var(--c) 10%, transparent);
-  border: 1px solid color-mix(in srgb, var(--c) 25%, transparent);
-  padding: 4px 10px;
+  gap: 6px;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: var(--font-body);
+  padding: 4px 12px;
   border-radius: 20px;
-  letter-spacing: 0.08em;
+  border: 1px solid;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
-  margin-bottom: 20px;
+}
+
+/* ── Tipografía del artículo ────────────────── */
+
+.wiki-article h1 {
+  font-size: clamp(26px, 4vw, 40px);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  margin-bottom: 16px;
+}
+
+.wiki-article h2 {
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--cluster-color, var(--accent));
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-top: 44px;
+  margin-bottom: 16px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid var(--bg-tertiary);
+  font-family: var(--font-body);
+}
+
+.wiki-article h3 {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 28px;
+  margin-bottom: 10px;
+}
+
+.wiki-article p {
+  font-size: 16px;
+  color: var(--text-secondary);
+  margin-bottom: 18px;
+  line-height: 1.8;
+}
+
+/* Definición destacada — primer párrafo */
+.wiki-article > p:first-of-type {
+  font-size: 17px;
+  font-weight: 400;
+  color: var(--text-primary);
+  line-height: 1.75;
+  background: var(--bg-secondary);
+  border-left: 4px solid var(--cluster-color, var(--accent));
+  padding: 20px 24px;
+  border-radius: 0 var(--radius-md) var(--radius-md) 0;
+  margin-bottom: 36px;
+}
+
+/* Links */
+.wiki-article a {
+  color: var(--cluster-color, var(--accent));
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.2s;
+}
+
+.wiki-article a:hover {
+  border-bottom-color: var(--cluster-color, var(--accent));
+}
+
+/* Strong */
+.wiki-article strong {
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* Listas */
+.wiki-article ul {
+  list-style: none;
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.wiki-article ul li {
+  font-size: 15px;
+  color: var(--text-secondary);
+  padding-left: 22px;
+  position: relative;
+  line-height: 1.7;
+}
+
+.wiki-article ul li::before {
+  content: '→';
+  position: absolute;
+  left: 0;
+  color: var(--cluster-color, var(--accent));
+  font-size: 13px;
+  top: 3px;
+}
+
+/* HR */
+.wiki-article hr {
+  border: none;
+  border-top: 1px solid var(--border-subtle);
+  margin: 40px 0;
+}
+
+@media (max-width: 640px) {
+  .wiki-container { padding: 32px 20px 60px; }
+  .wiki-article > p:first-of-type { padding: 16px 18px; font-size: 15px; }
+  .wiki-article h1 { font-size: 26px; }
 }
 </style>
