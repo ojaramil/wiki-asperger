@@ -85,11 +85,7 @@ if (schema_questions && schema_questions.length > 0) {
     <article class="article" style={`--cc: ${color}`}>
 
       {label && (
-        <div class="article-cluster">
-          <span class="cluster-label" style={`color: ${color}`}>
-            {label}
-          </span>
-        </div>
+        <p class="article-cluster" style={`color: ${color}`}>{label}</p>
       )}
 
       <slot />
@@ -113,45 +109,45 @@ if (schema_questions && schema_questions.length > 0) {
   margin: 0 auto;
 }
 
-/* ── Cluster label — solo texto, sin badge ── */
+/* ── Cluster label — Raleway uppercase, solo color ── */
 .article-cluster {
-  margin-bottom: 20px;
-}
-
-.cluster-label {
-  font-size: 12px;
+  font-family: var(--font-heading);
+  font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  font-family: var(--font-mono);
+  letter-spacing: 0.14em;
+  margin-bottom: 16px;
+  line-height: 1;
 }
 
 /* ── H1 — título ────────────────────────────── */
 .article h1 {
+  font-family: var(--font-heading);
   font-size: clamp(28px, 5vw, 42px);
   font-weight: 800;
   color: var(--text-primary);
   line-height: 1.2;
-  letter-spacing: -0.025em;
+  letter-spacing: -0.02em;
   margin-bottom: 24px;
 }
 
-/* ── H2 — secciones ─────────────────────────── */
+/* ── H2 — secciones (Raleway, pequeño, color cluster) ── */
 .article h2 {
+  font-family: var(--font-heading);
   font-size: 11px;
   font-weight: 700;
   color: var(--cc);
   text-transform: uppercase;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.14em;
   margin-top: 52px;
   margin-bottom: 16px;
-  font-family: var(--font);
   border: none;
   padding: 0;
 }
 
-/* ── H3 — subsecciones ──────────────────────── */
+/* ── H3 — subsecciones (Raleway, tamaño lectura) ── */
 .article h3 {
+  font-family: var(--font-heading);
   font-size: 18px;
   font-weight: 700;
   color: var(--text-primary);
@@ -159,19 +155,22 @@ if (schema_questions && schema_questions.length > 0) {
   margin-bottom: 12px;
 }
 
-/* ── Párrafos ────────────────────────────────── */
+/* ── Párrafos (Lato 300) ─────────────────────── */
 .article p {
+  font-family: var(--font-body);
   font-size: 17px;
+  font-weight: 300;
   color: var(--text-secondary);
   line-height: var(--reading-lh);
   margin-bottom: 20px;
 }
 
-/* ── Primer párrafo — definición ─────────────── */
+/* ── Primer párrafo — definición con borde ── */
 .article > p:first-of-type {
+  font-family: var(--font-body);
   font-size: 18px;
-  color: var(--text-primary);
   font-weight: 400;
+  color: var(--text-primary);
   line-height: 1.75;
   padding-left: 20px;
   border-left: 3px solid var(--cc);
@@ -183,19 +182,18 @@ if (schema_questions && schema_questions.length > 0) {
 .article a {
   color: var(--cc);
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 700;
   border-bottom: 1px solid transparent;
   transition: border-color 0.15s;
 }
 
-.article a:hover {
-  border-bottom-color: var(--cc);
-}
+.article a:hover { border-bottom-color: var(--cc); }
 
 /* ── Strong ─────────────────────────────────── */
 .article strong {
+  font-family: var(--font-body);
   color: var(--text-primary);
-  font-weight: 600;
+  font-weight: 700;
 }
 
 /* ── Listas ─────────────────────────────────── */
@@ -208,7 +206,9 @@ if (schema_questions && schema_questions.length > 0) {
 }
 
 .article ul li {
+  font-family: var(--font-body);
   font-size: 16px;
+  font-weight: 300;
   color: var(--text-secondary);
   line-height: 1.7;
   padding-left: 18px;
@@ -230,11 +230,12 @@ if (schema_questions && schema_questions.length > 0) {
   margin: 48px 0;
 }
 
-/* ── Em (nota clínica inline si aplica) ─────── */
+/* ── Em (nota clínica inline) ───────────────── */
 .article > em {
   display: block;
+  font-family: var(--font-body);
   font-size: 13px;
-  font-style: normal;
+  font-style: italic;
   color: var(--text-light);
   line-height: 1.7;
   padding-top: 28px;
@@ -242,7 +243,7 @@ if (schema_questions && schema_questions.length > 0) {
   border-top: 1px solid var(--border);
 }
 
-/* ── Blockquote (bloques ecosistema) ────────── */
+/* ── Blockquote ─────────────────────────────── */
 .article blockquote {
   border-left: 3px solid var(--border);
   padding: 4px 0 4px 20px;
@@ -250,7 +251,9 @@ if (schema_questions && schema_questions.length > 0) {
 }
 
 .article blockquote p {
+  font-family: var(--font-body);
   font-size: 15px;
+  font-weight: 300;
   color: var(--text-muted);
   margin-bottom: 8px;
 }

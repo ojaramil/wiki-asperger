@@ -38,21 +38,24 @@
 .header-logo { text-decoration: none; }
 
 .logo-wiki {
-  font-family: var(--font-mono);
-  font-size: 12px;
-  font-weight: 700;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 800;
   color: var(--accent);
+  letter-spacing: 0.02em;
 }
 
 .logo-dot {
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 400;
   color: var(--border);
 }
 
 .logo-site {
-  font-family: var(--font-mono);
-  font-size: 12px;
+  font-family: var(--font-heading);
+  font-size: 14px;
+  font-weight: 600;
   color: var(--text-light);
 }
 
@@ -63,8 +66,9 @@
 }
 
 .header-nav a {
+  font-family: var(--font-body);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 400;
   color: var(--text-muted);
   text-decoration: none;
   transition: color 0.15s;
@@ -79,7 +83,8 @@
   padding: 7px 16px !important;
   border-radius: 6px !important;
   font-size: 13px !important;
-  font-weight: 600 !important;
+  font-weight: 700 !important;
+  font-family: var(--font-body) !important;
   transition: background 0.15s !important;
 }
 
@@ -90,5 +95,6 @@
 
 @media (max-width: 600px) {
   .header-nav a:not(.header-cta) { display: none; }
+  .logo-site { display: none; }
 }
 </style>
