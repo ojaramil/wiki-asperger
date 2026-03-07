@@ -1,0 +1,25 @@
+---
+interface Props {
+  bloques: string[];
+}
+const { bloques } = Astro.props;
+
+const bloquesContent: Record<string, string> = {
+  A: `## Conecta con la comunidad Asperger\n\nEn la [Comunidad Asperger para Asperger](https://comunidad.aspergerparaasperger.org/invitation?code=9J8594)\nencontrarás personas con perfil Asperger que comparten experiencias reales\nsobre identidad, diagnóstico y vida cotidiana. Un espacio donde el perfil\nAsperger es comprendido desde adentro.`,
+  B: `## Encuentra tu lugar — Club social y educativo\n\nEl [Club Social y Educativo Asperger para Asperger](https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/)\nes un programa de pertenencia donde puedes conectar con otras personas\ncon perfil Asperger sin necesidad de enmascarar. Actividades, acompañamiento\ny comunidad real.`,
+  C: `## Inclusión laboral para el perfil Asperger\n\nEl ecosistema de inclusión laboral de Asperger para Asperger incluye\nvarios recursos pensados específicamente para el perfil neurocognitivo Asperger:\n\n- 💼 [Bolsa de empleo Auténticamente Capaces](https://www.autenticamentecapaces.work)\n  — ofertas de trabajo en empresas que valoran la neurodiversidad\n- 🎓 [Plan Embajador](https://www.aspergerparaasperger.org/plan-embajador-asperger-para-asperger/)\n  — programa de acompañamiento para inclusión laboral real\n- 📻 [Radio Signal Club](https://signalradio.club)\n  — proyecto de inclusión donde personas neurodiversas tienen voz\n- 📖 [Revista Asperger para Asperger](https://revista.aspergerparaasperger.org)\n  — artículos en profundidad sobre el perfil Asperger en el trabajo\n- 🛒 [Tienda](https://tienda.aspergerparaasperger.org)\n  — recursos y herramientas para el perfil Asperger`,
+  D: `## Radio Signal — Voces del espectro\n\n[Signal Radio Club](https://signalradio.club) es un proyecto de inclusión\ndonde personas neurodiversas tienen voz. Una radio hecha desde y para\nla comunidad Asperger y neurodiversa.`,
+  E: `## App Escudo Seguro\n\n[Escudo Seguro](https://escudoseguro.co) es una app de seguridad y\nacompañamiento pensada para situaciones de vulnerabilidad. Útil para\npersonas Asperger en situaciones de sobrecarga o emergencia.`,
+  F: `## Desde la experiencia real\n\nEn el [blog de Asperger para Asperger](https://www.aspergerparaasperger.org/blog)\nencontrarás artículos escritos desde la experiencia directa del perfil\nAsperger — no desde el manual clínico.`,
+  G: `## Profundiza en la Revista Asperger para Asperger\n\nLa [Revista Asperger para Asperger](https://revista.aspergerparaasperger.org)\npublica artículos en profundidad sobre el perfil neurocognitivo Asperger\ndesde la experiencia real — no desde el manual clínico.`,
+  H: `## Recursos para el perfil Asperger\n\nEn la [Tienda Asperger para Asperger](https://tienda.aspergerparaasperger.org)\nencontrarás recursos, herramientas y materiales pensados específicamente\npara el perfil neurocognitivo Asperger.`
+};
+
+import { marked } from 'marked';
+---
+
+<div class="ecosystem-blocks">
+  {bloques && bloques.map(b => (
+    <div class="ecosystem-block" set:html={marked.parse(bloquesContent[b] || '')} />
+  ))}
+</div>
