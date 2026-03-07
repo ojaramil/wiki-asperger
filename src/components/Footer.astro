@@ -11,8 +11,9 @@
         <a href="https://revista.aspergerparaasperger.org">Revista</a>
         <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
         <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/">Club</a>
-        <a href="https://www.autenticamentecapaces.work">Empleo</a>
+        <a href="https://www.autenticamentecapaces.work">Bolsa de empleo</a>
         <a href="https://www.aspergerparaasperger.org/plan-embajador-asperger-para-asperger/">Plan Embajador</a>
+        <a href="https://signalradio.club">Radio Signal</a>
         <a href="https://escudoseguro.co">Escudo Seguro</a>
         <a href="https://tienda.aspergerparaasperger.org">Tienda</a>
       </nav>
@@ -36,7 +37,7 @@
 .footer-inner {
   max-width: calc(var(--content-width) + 48px);
   margin: 0 auto;
-  padding: 40px 24px 32px;
+  padding: 40px 24px 28px;
 }
 
 .footer-top {
@@ -44,21 +45,21 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 28px;
   flex-wrap: wrap;
 }
 
 .footer-brand {
+  font-family: var(--font);
   font-size: 14px;
-  font-weight: 700;
-  color: var(--text-primary);
+  font-weight: 800;
+  color: var(--color-heading);
   text-decoration: none;
+  letter-spacing: -0.02em;
   white-space: nowrap;
-  border-bottom: none;
-  flex-shrink: 0;
 }
 
-.footer-brand:hover { color: var(--accent); }
+.footer-brand:hover { color: var(--color-accent); text-decoration: none; }
 
 .footer-nav {
   display: flex;
@@ -68,14 +69,15 @@
 }
 
 .footer-nav a {
-  font-size: 13px;
-  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.88rem;
+  font-weight: 500;
+  color: var(--color-body);
   text-decoration: none;
   transition: color 0.15s;
-  border-bottom: none;
 }
 
-.footer-nav a:hover { color: var(--accent); }
+.footer-nav a:hover { color: var(--color-link); text-decoration: none; }
 
 .footer-bottom {
   display: flex;
@@ -88,8 +90,10 @@
 }
 
 .footer-bottom span {
-  font-size: 12px;
-  color: var(--text-light);
+  font-family: var(--font);
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: var(--color-muted);
 }
 
 .footer-note {

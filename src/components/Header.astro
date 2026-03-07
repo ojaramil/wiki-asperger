@@ -3,7 +3,9 @@
 <header class="header">
   <div class="header-inner">
     <a href="/" class="header-logo">
-      <span class="logo-wiki">wiki</span><span class="logo-dot">.</span><span class="logo-site">aspergerparaasperger</span>
+      <span class="logo-main">Asperger para Asperger</span>
+      <span class="logo-sep"> · </span>
+      <span class="logo-wiki">Wiki</span>
     </a>
     <nav class="header-nav">
       <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
@@ -18,45 +20,53 @@
 
 <style>
 .header {
-  border-bottom: 1px solid var(--border);
-  background: white;
   position: sticky;
   top: 0;
   z-index: 50;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--border);
 }
 
 .header-inner {
   max-width: calc(var(--content-width) + 48px);
   margin: 0 auto;
   padding: 0 24px;
-  height: 56px;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 24px;
 }
 
-.header-logo { text-decoration: none; }
+.header-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 0;
+}
 
-.logo-wiki {
-  font-family: var(--font-heading);
+.logo-main {
+  font-family: var(--font);
   font-size: 14px;
   font-weight: 800;
-  color: var(--accent);
-  letter-spacing: 0.02em;
+  color: var(--color-heading);
+  letter-spacing: -0.02em;
 }
 
-.logo-dot {
-  font-family: var(--font-heading);
+.logo-sep {
   font-size: 14px;
-  font-weight: 400;
   color: var(--border);
+  font-weight: 400;
+  margin: 0 2px;
 }
 
-.logo-site {
-  font-family: var(--font-heading);
+.logo-wiki {
+  font-family: var(--font);
   font-size: 14px;
-  font-weight: 600;
-  color: var(--text-light);
+  font-weight: 500;
+  color: var(--color-accent);
 }
 
 .header-nav {
@@ -66,35 +76,39 @@
 }
 
 .header-nav a {
-  font-family: var(--font-body);
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: var(--color-body);
   text-decoration: none;
-  transition: color 0.15s;
-  border-bottom: none;
+  transition: color 0.2s;
 }
 
-.header-nav a:hover { color: var(--text-primary); }
+.header-nav a:hover {
+  color: var(--color-heading);
+  text-decoration: none;
+}
 
 .header-cta {
-  background: var(--accent) !important;
+  background: var(--color-accent) !important;
   color: white !important;
-  padding: 7px 16px !important;
+  padding: 8px 18px !important;
   border-radius: 6px !important;
-  font-size: 13px !important;
   font-weight: 700 !important;
-  font-family: var(--font-body) !important;
-  transition: background 0.15s !important;
+  font-size: 0.88rem !important;
+  transition: background 0.2s !important;
 }
 
 .header-cta:hover {
-  background: var(--accent-dark) !important;
+  background: var(--color-accent-hover) !important;
   color: white !important;
+  text-decoration: none !important;
 }
 
 @media (max-width: 600px) {
   .header-nav a:not(.header-cta) { display: none; }
-  .logo-site { display: none; }
+  .logo-sep { display: none; }
+  .logo-wiki { display: none; }
+  .logo-main { font-size: 13px; }
 }
 </style>

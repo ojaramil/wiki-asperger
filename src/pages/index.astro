@@ -26,20 +26,18 @@ function getEntradasByCluster(clusterName: string) {
 >
   <!-- Hero -->
   <section class="hero">
-    <span class="hero-label">wiki · asperger para asperger</span>
-    <h1 class="hero-title">El perfil Asperger desde adentro.</h1>
+    <span class="hero-eyebrow">wiki · asperger para asperger</span>
+    <h1 class="hero-title">Base de conocimiento sobre el perfil Asperger.</h1>
     <p class="hero-desc">
-      Base de conocimiento sobre el perfil neurocognitivo Asperger.
       Sin lenguaje clínico. Sin plantillas. Desde la experiencia real.
+      Un recurso creado por personas Asperger para personas Asperger.
     </p>
-    <div class="hero-links">
-      <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/" class="hero-link-primary">
-        Unirme al Club →
-      </a>
-      <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594" class="hero-link-secondary">
-        Comunidad gratuita
-      </a>
-    </div>
+    <a
+      href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/"
+      class="hero-cta"
+    >
+      Unirme al Club →
+    </a>
   </section>
 
   <!-- Buscador -->
@@ -54,18 +52,20 @@ function getEntradasByCluster(clusterName: string) {
     />
   </div>
 
-  <!-- Clusters — lista plana -->
+  <!-- Clusters -->
   <div class="clusters" id="clustersContainer">
-    <span class="clusters-label">Explorar por área</span>
+    <span class="clusters-eyebrow">Explorar por área</span>
     {clusters.map(cluster => {
       const items = getEntradasByCluster(cluster.name);
       if (items.length === 0) return null;
       return (
-        <div class="cluster-group" style={`--cc: ${cluster.color}`} data-cluster={cluster.name}>
-          <h2 class="cluster-group-title" style={`color: ${cluster.color}`}>
-            {cluster.name}
-          </h2>
-          <div class="cluster-group-links">
+        <div
+          class="cluster-group"
+          style={`--cc: ${cluster.color}`}
+          data-cluster={cluster.name}
+        >
+          <h2 class="cluster-title">{cluster.name}</h2>
+          <div class="cluster-links">
             {items.map(entrada => (
               <a href={`/${entrada.slug}`} class="node-link">
                 {entrada.data.title}
@@ -104,71 +104,61 @@ function getEntradasByCluster(clusterName: string) {
 .hero {
   max-width: calc(var(--content-width) + 48px);
   margin: 0 auto;
-  padding: 72px 24px 48px;
+  padding: 72px 24px 52px;
   border-bottom: 1px solid var(--border);
 }
 
-.hero-label {
+.hero-eyebrow {
+  font-family: var(--font);
   font-size: 11px;
   font-weight: 700;
-  color: var(--accent);
+  color: var(--color-accent);
   text-transform: uppercase;
   letter-spacing: 0.12em;
   display: block;
   margin-bottom: 16px;
-  font-family: var(--font-heading);
 }
 
 .hero-title {
-  font-family: var(--font-heading);
+  font-family: var(--font);
   font-size: clamp(28px, 5vw, 44px);
   font-weight: 800;
-  color: var(--text-primary);
+  color: var(--color-heading);
   line-height: 1.15;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.03em;
   margin-bottom: 16px;
-  max-width: 600px;
+  max-width: 620px;
 }
 
 .hero-desc {
-  font-size: 17px;
-  color: var(--text-muted);
-  line-height: 1.7;
+  font-family: var(--font);
+  font-size: 1.05rem;
+  font-weight: 400;
+  color: var(--color-body);
+  line-height: 1.8;
+  letter-spacing: -0.01em;
   max-width: 520px;
   margin-bottom: 32px;
 }
 
-.hero-links {
-  display: flex;
-  gap: 24px;
-  align-items: center;
-  flex-wrap: wrap;
-}
-
-.hero-links a {
-  font-size: 14px;
-  font-weight: 600;
+.hero-cta {
+  display: inline-block;
+  background: var(--color-accent);
+  color: white;
+  font-family: var(--font);
+  font-size: 0.92rem;
+  font-weight: 700;
+  padding: 10px 22px;
+  border-radius: 6px;
   text-decoration: none;
-  transition: color 0.15s;
-  border-bottom: none;
+  transition: background 0.2s;
 }
 
-.hero-link-primary {
-  color: var(--accent);
-  border-bottom: 2px solid var(--accent) !important;
-  padding-bottom: 1px;
+.hero-cta:hover {
+  background: var(--color-accent-hover);
+  color: white;
+  text-decoration: none;
 }
-
-.hero-link-primary:hover {
-  color: var(--accent-dark);
-  border-bottom-color: var(--accent-dark) !important;
-}
-
-.hero-link-secondary {
-  color: var(--text-muted);
-}
-
-.hero-link-secondary:hover { color: var(--text-primary); }
 
 /* ── Buscador ─────────────────────────────── */
 .search-section {
@@ -185,14 +175,16 @@ function getEntradasByCluster(clusterName: string) {
   border-radius: 6px;
   padding: 10px 16px;
   font-family: var(--font);
-  font-size: 14px;
-  color: var(--text-primary);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-heading);
+  letter-spacing: -0.01em;
   outline: none;
   transition: border-color 0.2s;
 }
 
-.search-input:focus { border-color: var(--accent); }
-.search-input::placeholder { color: var(--text-light); }
+.search-input:focus { border-color: var(--color-accent); }
+.search-input::placeholder { color: var(--color-muted); }
 
 /* ── Clusters ─────────────────────────────── */
 .clusters {
@@ -201,12 +193,13 @@ function getEntradasByCluster(clusterName: string) {
   padding: 44px 24px 80px;
 }
 
-.clusters-label {
+.clusters-eyebrow {
+  font-family: var(--font);
   font-size: 11px;
   font-weight: 700;
-  color: var(--text-light);
+  color: var(--color-muted);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   display: block;
   margin-bottom: 32px;
 }
@@ -219,46 +212,52 @@ function getEntradasByCluster(clusterName: string) {
 
 .cluster-group:last-child {
   border-bottom: none;
-  margin-bottom: 0;
   padding-bottom: 0;
 }
 
-.cluster-group-title {
-  font-family: var(--font-heading);
+.cluster-title {
+  font-family: var(--font);
   font-size: 11px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.12em;
+  color: var(--cc);
   margin-bottom: 14px;
+  border: none;
+  padding: 0;
+  margin-top: 0;
 }
 
-.cluster-group-links {
+.cluster-links {
   display: flex;
   flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 4px;
 }
 
-.cluster-group-links a.node-link {
-  font-size: 15px;
+.cluster-links a.node-link {
+  font-family: var(--font);
+  font-size: 1rem;
   font-weight: 500;
-  color: var(--text-secondary);
+  color: var(--color-body);
   text-decoration: none;
   padding: 4px 0;
-  transition: color 0.15s;
   width: calc(50% - 12px);
   display: block;
-  border-bottom: none;
+  transition: color 0.15s;
+  letter-spacing: -0.01em;
 }
 
-.cluster-group-links a.node-link:hover { color: var(--cc); }
+.cluster-links a.node-link:hover {
+  color: var(--color-link);
+  text-decoration: none;
+}
 
 /* ── Responsive ──────────────────────────── */
 @media (max-width: 480px) {
   .hero { padding: 48px 20px 40px; }
-  .hero-links { flex-direction: column; gap: 12px; align-items: flex-start; }
-  .hero-link-primary { border-bottom: none !important; }
   .clusters { padding: 36px 20px 60px; }
   .search-section { padding: 28px 20px 0; }
-  .cluster-group-links a.node-link { width: 100%; }
+  .cluster-links a.node-link { width: 100%; }
 }
 </style>

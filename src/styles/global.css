@@ -1,44 +1,48 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,600;0,700;0,800;1,600&family=Lato:ital,wght@0,300;0,400;0,700;1,400&display=swap');
-
-/*
-  TIPOGRAFÍA:
-  - Raleway → H1, H2, H3, logo, labels de cluster
-  - Lato    → párrafos, FAQ, notas, todo el texto corrido
-
-  Lato fue diseñada para lectura larga en pantalla (Wikipedia la usa).
-  Raleway aporta personalidad en los títulos sin competir con el cuerpo.
-  Ambas son humanistas — mismo espíritu, diferente rol.
-*/
+/* Plus Jakarta Sans — misma fuente que aspergerparaasperger.org */
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,700;0,800;1,400&display=swap');
 
 :root {
-  --accent: #0d9488;
-  --accent-dark: #0f766e;
+  /* ── Colores — tomados directamente del sitio principal ── */
+  --color-heading: #0b1c39;
+  /* azul marino profundo */
+  --color-body: #6b7280;
+  /* gris medio */
+  --color-muted: #9ca3af;
+  /* gris claro — metadatos */
+  --color-accent: #0d9488;
+  /* teal — color del proyecto */
+  --color-accent-hover: #0f766e;
+  --color-link: #4495eb;
+  /* azul vibrante — igual que el sitio */
 
-  --text-primary: #1a1a1a;
-  --text-secondary: #3d3d3d;
-  --text-muted: #737373;
-  --text-light: #a3a3a3;
-
+  /* ── Fondos ── */
   --bg: #ffffff;
   --bg-soft: #f9fafb;
   --border: #e5e7eb;
 
-  --font-heading: 'Raleway', sans-serif;
-  --font-body: 'Lato', sans-serif;
+  /* ── Tipografía ── */
+  --font: 'Plus Jakarta Sans', sans-serif;
 
-  /* Legacy aliases — compatibilidad con EcosistemaLinks / NotaClinica */
-  --font: 'Lato', sans-serif;
-  --font-mono: 'Raleway', sans-serif;
-  --primary: #0d9488;
-  --secondary: #737373;
+  /* ── Layout ── */
+  --content-width: 700px;
+
+  /* ── Legacy aliases — compatibilidad con componentes previos ── */
+  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --font-heading: 'Plus Jakarta Sans', sans-serif;
+  --font-mono: 'Plus Jakarta Sans', sans-serif;
+  --accent: #0d9488;
+  --accent-dark: #0f766e;
+  --text-primary: #0b1c39;
+  --text-secondary: #6b7280;
+  --text-muted: #9ca3af;
+  --text-light: #9ca3af;
   --bg-primary: #ffffff;
   --bg-secondary: #f9fafb;
   --bg-tertiary: #f3f4f6;
   --border-subtle: #e5e7eb;
   --border-mid: #d1d5db;
-
-  --content-width: 680px;
-  --reading-lh: 1.85;
+  --primary: #0d9488;
+  --secondary: #6b7280;
 }
 
 /* ── Reset ─────────────────────────────────── */
@@ -57,11 +61,12 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font);
   background: var(--bg);
-  color: var(--text-primary);
-  font-size: 17px;
-  line-height: var(--reading-lh);
+  color: var(--color-body);
+  font-size: 1.05rem;
+  line-height: 1.8;
+  letter-spacing: -0.01em;
   min-height: 100vh;
 }
 
@@ -71,18 +76,20 @@ img {
 }
 
 a {
-  color: var(--accent);
+  color: var(--color-link);
   text-decoration: none;
+  font-weight: 500;
 }
 
 a:hover {
-  color: var(--accent-dark);
+  color: var(--color-accent-hover);
+  text-decoration: underline;
 }
 
 /* ── Selección ─────────────────────────────── */
 ::selection {
   background: #ccfbf1;
-  color: var(--accent-dark);
+  color: var(--color-accent-hover);
 }
 
 /* ── Scrollbar ─────────────────────────────── */
@@ -100,7 +107,7 @@ a:hover {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--accent);
+  background: var(--color-accent);
 }
 
 /* ── wiki-content (RootLayout) ──────────────── */
@@ -121,11 +128,13 @@ main.wiki-content {
 }
 
 .nota-clinica p {
-  font-family: var(--font-body);
-  font-size: 13px;
-  color: var(--text-light);
+  font-family: var(--font);
+  font-size: 0.82rem;
+  font-weight: 400;
+  color: var(--color-muted);
   line-height: 1.7;
   margin: 0;
+  letter-spacing: 0;
 }
 
 .nota-clinica em {
@@ -135,38 +144,42 @@ main.wiki-content {
 /* ── Ecosystem blocks ────────────────────────── */
 .ecosystem-block {
   margin: 28px 0;
-  padding: 16px 20px;
+  padding: 16px 18px;
   border-left: 3px solid var(--border);
 }
 
 .ecosystem-block h2,
 .ecosystem-block h3 {
-  font-family: var(--font-heading) !important;
+  font-family: var(--font) !important;
   font-size: 11px !important;
   font-weight: 700 !important;
-  color: var(--text-muted) !important;
+  color: var(--color-muted) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.12em !important;
   margin-bottom: 8px !important;
   margin-top: 0 !important;
   border: none !important;
   padding: 0 !important;
+  line-height: 1 !important;
 }
 
 .ecosystem-block p {
-  font-family: var(--font-body);
-  font-size: 14px;
-  color: var(--text-muted);
+  font-family: var(--font);
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: var(--color-muted);
   margin-bottom: 4px !important;
   line-height: 1.6 !important;
+  letter-spacing: -0.01em;
 }
 
 .ecosystem-block a {
-  color: var(--text-muted);
-  font-size: 14px;
-  border-bottom: none;
+  color: var(--color-body);
+  font-size: 0.95rem;
+  font-weight: 500;
 }
 
 .ecosystem-block a:hover {
-  color: var(--accent);
+  color: var(--color-link);
+  text-decoration: none;
 }
