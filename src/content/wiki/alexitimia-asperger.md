@@ -6,38 +6,66 @@ related: ["asperger-adultos", "citas-asperger", "asperger-mujeres"]
 keywords: ["alexitimia asperger", "alexitimia asperger autismo", "perfil asperger alexitimia asperger"]
 bloques: ["G", "F"]
 schema_questions:
-  - question: "¿Qué es alexitimia en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es alexitimia algo que se puede curar?"
-    answer: "No. alexitimia forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Qué es la alexitimia en el perfil Asperger?"
+    answer: "La alexitimia es la dificultad para identificar, nombrar y describir las propias emociones. No significa no sentir nada — significa no poder acceder verbalmente a lo que se siente. Es frecuente en el perfil Asperger y genera malentendidos en relaciones porque la persona siente pero no puede explicar qué está sintiendo."
+  - question: "¿La alexitimia significa que no siento nada?"
+    answer: "No. Las personas Asperger con alexitimia sienten emociones con la misma o mayor intensidad que cualquier otra persona. La dificultad está en el acceso verbal: saben que algo pasa, pero no pueden nombrarlo ni describirlo con precisión. La emoción existe; la etiqueta no llega."
+  - question: "¿La alexitimia afecta las relaciones?"
+    answer: "Sí, de manera significativa. Cuando alguien pregunta '¿cómo te sientes?' y la respuesta honesta es 'no lo sé', la otra persona puede interpretarlo como indiferencia o evasión. Entender que la alexitimia es una dificultad de acceso, no de ausencia, cambia completamente la dinámica."
 ---
 
-## ¿Qué es alexitimia Asperger?
-alexitimia Asperger es una manifestación característica propia del perfil neurocognitivo Asperger. Se trata de una forma natural, única y válida de procesar la realidad, diferenciándose de lo que usualmente se espera de las mentes neurotípicas.
+La alexitimia es la dificultad para identificar, nombrar y describir las propias emociones. No es no sentir nada — es no poder acceder a lo que se siente con suficiente precisión como para ponerlo en palabras.
 
-## Cómo funciona en el cerebro Asperger
-El cerebro Asperger gestiona alexitimia a través de sus propias vías neuronales y cognitivas. Es vital recordar que **no se trata de un déficit** ni de un error de sistema. Más bien, es una estructura neurológica distinta que procesa la información sensorial y emocional de manera alternativa y muy válida.
+## Qué es exactamente
+
+El término viene del griego: *a* (sin) + *lexis* (palabras) + *thymós* (emoción). Sin palabras para las emociones.
+
+En el perfil Asperger, la alexitimia es frecuente. No universal, pero muy común. Y es uno de los conceptos que más personas Asperger adultas describen como un momento de reconocimiento: leer la definición y pensar *esto tiene nombre, y ese nombre me describe*.
+
+La alexitimia no es frialdad emocional. No es indiferencia. No es falta de empatía. Es una dificultad específica: el sistema que debería etiquetar las señales corporales como "esto es ansiedad", "esto es tristeza", "esto es decepción" no funciona con claridad. Las señales llegan — el cuerpo reacciona — pero la traducción se pierde en algún punto del camino.
 
 ## Cómo se siente desde adentro
-Desde la experiencia vivida en la comunidad Asperger, sentir y experimentar alexitimia es algo único para cada persona, pero con patrones muy compartidos en nuestra comunidad neurodivergente.
 
+Desde adentro, la alexitimia se parece a esto: algo está pasando. El cuerpo lo sabe. Hay tensión en el pecho, o el estómago apretado, o una energía que no tiene nombre. Pero cuando alguien pregunta "¿cómo te sientes?", la respuesta honesta es "no sé".
 
+No es una respuesta evasiva. Es una respuesta literal.
+
+La emoción existe en el cuerpo antes de que exista en el lenguaje. El problema es que en la alexitimia, el trayecto entre el cuerpo y el lenguaje es largo, confuso, o directamente inaccesible. La persona puede saber que algo está mal sin poder decir qué. Puede saber que algo la perturbó sin poder explicar por qué.
+
+Esto también ocurre hacia adelante: al intentar describir emociones passadas, la memoria emocional es menos nítida que la memoria factual. Se recuerda lo que pasó, pero lo que se sintió aparece borroso.
+
+## Por qué genera malentendidos en relaciones
+
+La alexitimia es invisible para quien no la conoce.
+
+Cuando alguien pregunta "¿te molestó lo que dije?" y la respuesta es un silencio o un "no lo sé", la lectura que hace la otra persona es casi siempre: indiferencia, evasión, falta de interés en la conversación.
+
+Lo que en realidad está pasando es que la persona Asperger no tiene acceso a esa información en ese momento. No es que no quiera responder. Es que la respuesta no está disponible todavía.
+
+La diferencia entre frialdad emocional y alexitimia es precisamente esa: la frialdad implica que la emoción no existe. La alexitimia implica que la emoción existe pero no se puede traducir.
 
 ## Ejemplo real
-Imagina una situación cotidiana en un entorno de oficina o en una reunión social, donde la mayoría de las personas sobreentienden un contexto de manera automática. Al aplicar el perfil neurocognitivo Asperger, tú notas o experimentas alexitimia desde un ángulo altamente sistemático, analítico o literal. Es, sencillamente, una diferencia de enfoque enriquecedora, no un defecto o problema.
+
+Andrés lleva semanas trabajando en un proyecto que le importa mucho. Su jefe lo descarta en tres frases sin mirarlo.
+
+Esa noche, su pareja le pregunta: ¿cómo estás?
+
+Andrés dice: bien. No es mentira. No está evadiendo. Es que físicamente está sentado, está respondiendo, está funcionando. Pero hay algo — una especie de peso, un ruido de fondo, algo que hace que leer sea difícil y que no quiera hablar — y no puede nombrar qué es.
+
+Tres días después, en la ducha, sin ningún estímulo externo, lo procesa: estaba decepcionado. Y también herido. No porque el proyecto no siguiera adelante, sino porque nadie preguntó por qué le importaba tanto.
+
+Tres días para nombrar dos palabras.
 
 ## Preguntas frecuentes
 
-**¿Qué es alexitimia en el perfil Asperger?**
-Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad.
+**¿La alexitimia significa que no siento nada?**
+No. Las emociones existen — a veces con una intensidad mayor que en otras personas. Lo que no llega con claridad es la etiqueta. El cuerpo siente. El lenguaje no puede seguirle el ritmo.
 
-**¿Es alexitimia algo que se puede curar?**
-No. Forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar al entorno vital.
+**¿Cómo puedo identificar mejor mis emociones siendo Asperger?**
+Algunos recursos útiles: llevar un registro de estados físicos (tensión, fatiga, ritmo cardíaco) y relacionarlos con eventos del día. Usar listas de emociones como referencia — no para "elegir" qué sentir, sino para encontrar el término que mejor describe lo que ya está ahí. El proceso es lento, pero mejora con práctica.
 
-**¿Cómo impacta esto en la vida social y laboral?**
-Puede marcar diferencias en el estilo de comunicación, pero con herramientas enfocadas y comprensión mutua se alcanzan dinámicas realmente enriquecedoras en cualquier ámbito.
+**¿La alexitimia afecta las relaciones?**
+Sí. Principalmente porque la otra persona interpreta el silencio emocional como indiferencia. Entender que la alexitimia es una dificultad de acceso — no de ausencia — cambia la dinámica completamente. Muchas parejas de personas Asperger describen un cambio real cuando comprenden esto.
 
 ## Relacionado con el perfil Asperger
 - [Asperger Adultos](/asperger-adultos)
