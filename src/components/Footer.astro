@@ -1,119 +1,73 @@
 ---
 ---
-<footer class="site-footer">
+<footer class="footer">
   <div class="footer-inner">
-    <div class="footer-brand">
-      <a href="https://www.aspergerparaasperger.org" class="footer-logo">
+    <div class="footer-top">
+      <a href="https://www.aspergerparaasperger.org" class="footer-brand">
         Asperger para Asperger
       </a>
-      <p class="footer-desc">
-        Base de conocimiento sobre el perfil neurocognitivo Asperger
-        — desde la experiencia real.
-      </p>
-      <p class="footer-note">
-        El término Asperger se usa como identidad neurocognitiva,
-        no como diagnóstico clínico.
-      </p>
-    </div>
-
-    <div class="footer-cols">
-      <div class="footer-col">
-        <span class="footer-col-title">Comunidad</span>
-        <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">NeuroUniverso (gratis)</a>
-        <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/">Club social y educativo</a>
+      <nav class="footer-nav">
         <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
         <a href="https://revista.aspergerparaasperger.org">Revista</a>
-      </div>
-      <div class="footer-col">
-        <span class="footer-col-title">Inclusión laboral</span>
+        <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
+        <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/">Club</a>
+        <a href="https://www.autenticamentecapaces.work">Empleo</a>
         <a href="https://www.aspergerparaasperger.org/plan-embajador-asperger-para-asperger/">Plan Embajador</a>
-        <a href="https://www.autenticamentecapaces.work">Bolsa de empleo</a>
-        <a href="https://signalradio.club">Radio Signal</a>
+        <a href="https://escudoseguro.co">Escudo Seguro</a>
         <a href="https://tienda.aspergerparaasperger.org">Tienda</a>
-      </div>
-      <div class="footer-col">
-        <span class="footer-col-title">Proyectos</span>
-        <a href="https://escudoseguro.co">App Escudo Seguro</a>
-        <a href="https://www.aspergerparaasperger.org">Sitio principal</a>
-        <a href="/">Wiki</a>
-      </div>
+      </nav>
     </div>
-  </div>
-
-  <div class="footer-bottom">
-    <span>© Asperger para Asperger®</span>
-    <div class="footer-bottom-links">
-      <a href="https://www.aspergerparaasperger.org/terminos-y-condiciones/">Términos</a>
-      <a href="https://www.aspergerparaasperger.org/politica-de-privacidad/">Privacidad</a>
+    <div class="footer-bottom">
+      <span>© Asperger para Asperger®</span>
+      <span class="footer-note">
+        El término Asperger se usa como identidad neurocognitiva, no como diagnóstico clínico.
+      </span>
     </div>
   </div>
 </footer>
 
 <style>
-.site-footer {
+.footer {
+  border-top: 1px solid var(--border);
+  background: var(--bg-soft);
   margin-top: 80px;
-  background: var(--bg-secondary);
-  border-top: 1px solid var(--border-subtle);
 }
 
 .footer-inner {
-  max-width: 1100px;
+  max-width: calc(var(--content-width) + 48px);
   margin: 0 auto;
-  padding: 56px 24px 40px;
-  display: grid;
-  grid-template-columns: 280px 1fr;
-  gap: 64px;
+  padding: 40px 24px 32px;
 }
 
-.footer-logo {
-  font-family: var(--font-body);
-  font-size: 15px;
+.footer-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 32px;
+  flex-wrap: wrap;
+}
+
+.footer-brand {
+  font-size: 14px;
   font-weight: 700;
   color: var(--text-primary);
   text-decoration: none;
-  display: block;
-  margin-bottom: 12px;
+  white-space: nowrap;
   border-bottom: none;
+  flex-shrink: 0;
 }
 
-.footer-logo:hover { color: var(--accent); }
+.footer-brand:hover { color: var(--accent); }
 
-.footer-desc {
-  font-size: 13px;
-  color: var(--text-muted);
-  line-height: 1.6;
-  margin-bottom: 10px;
-}
-
-.footer-note {
-  font-size: 11px;
-  color: var(--text-light);
-  line-height: 1.5;
-  font-style: italic;
-}
-
-.footer-cols {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-}
-
-.footer-col {
+.footer-nav {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-wrap: wrap;
+  gap: 8px 20px;
+  justify-content: flex-end;
 }
 
-.footer-col-title {
-  font-size: 11px;
-  font-weight: 700;
-  color: var(--text-primary);
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  margin-bottom: 4px;
-}
-
-.footer-col a {
+.footer-nav a {
   font-size: 13px;
   color: var(--text-muted);
   text-decoration: none;
@@ -121,42 +75,33 @@
   border-bottom: none;
 }
 
-.footer-col a:hover { color: var(--accent); }
+.footer-nav a:hover { color: var(--accent); }
 
 .footer-bottom {
-  max-width: 1100px;
-  margin: 0 auto;
-  padding: 20px 24px;
-  border-top: 1px solid var(--border-subtle);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 24px;
+  padding-top: 20px;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.footer-bottom span {
   font-size: 12px;
   color: var(--text-light);
 }
 
-.footer-bottom-links {
-  display: flex;
-  gap: 20px;
+.footer-note {
+  font-style: italic;
+  text-align: right;
+  max-width: 380px;
 }
 
-.footer-bottom-links a {
-  color: var(--text-light);
-  text-decoration: none;
-  font-size: 12px;
-  transition: color 0.15s;
-  border-bottom: none;
-}
-
-.footer-bottom-links a:hover { color: var(--text-muted); }
-
-@media (max-width: 900px) {
-  .footer-inner { grid-template-columns: 1fr; gap: 40px; }
-  .footer-cols { grid-template-columns: repeat(2, 1fr); }
-}
-
-@media (max-width: 560px) {
-  .footer-cols { grid-template-columns: 1fr; }
-  .footer-bottom { flex-direction: column; gap: 12px; text-align: center; }
+@media (max-width: 600px) {
+  .footer-top { flex-direction: column; }
+  .footer-nav { justify-content: flex-start; }
+  .footer-bottom { flex-direction: column; text-align: center; }
+  .footer-note { text-align: center; max-width: 100%; }
 }
 </style>

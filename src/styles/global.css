@@ -1,65 +1,38 @@
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Space+Mono:wght@400;700&display=swap');
 
 /* =============================================
-   ASPERGER PARA ASPERGER — WIKI DESIGN SYSTEM
-   Paleta: clara · Jakarta + Space Mono · Teal
+   ASPERGER PARA ASPERGER — WIKI MINIMAL
+   Filosofía: el diseño desaparece, queda el contenido
    ============================================= */
 
 :root {
-  /* ── Fondos ── */
-  --bg-primary: #ffffff;
-  --bg-secondary: #f8fafc;
-  --bg-tertiary: #f1f5f9;
-  --bg-hover: #e2e8f0;
-
-  /* ── Bordes ── */
-  --border-subtle: #e2e8f0;
-  --border-mid: #cbd5e1;
-  --border-strong: #94a3b8;
-
-  /* ── Texto ── */
-  --text-primary: #0f172a;
-  --text-secondary: #334155;
-  --text-muted: #64748b;
-  --text-light: #94a3b8;
-
-  /* ── Acento teal — color del proyecto ── */
   --accent: #0d9488;
-  --accent-light: #ccfbf1;
   --accent-dark: #0f766e;
 
-  /* ── Colores por cluster ── */
-  --c-fundamentos: #2563eb;
-  --c-comunicacion: #0d9488;
-  --c-experiencia: #7c3aed;
-  --c-social: #d97706;
-  --c-pareja: #e11d48;
-  --c-trabajo: #16a34a;
-  --c-diagnostico: #ea580c;
-  --c-regulacion: #9333ea;
+  --text-primary: #1a1a1a;
+  --text-secondary: #3d3d3d;
+  --text-muted: #737373;
+  --text-light: #a3a3a3;
 
-  /* ── Tipografía ── */
-  --font-body: 'Plus Jakarta Sans', sans-serif;
+  --bg: #ffffff;
+  --bg-soft: #f9fafb;
+  --border: #e5e7eb;
+
+  --font: 'Plus Jakarta Sans', sans-serif;
   --font-mono: 'Space Mono', monospace;
 
-  /* ── Radios ── */
-  --radius-sm: 6px;
-  --radius-md: 10px;
-  --radius-lg: 16px;
-  --radius-xl: 24px;
+  --content-width: 680px;
+  --reading-lh: 1.85;
 
-  /* ── Sombras ── */
-  --shadow-xs: 0 1px 2px rgba(15, 23, 42, 0.06);
-  --shadow-sm: 0 1px 3px rgba(15, 23, 42, 0.08), 0 1px 2px rgba(15, 23, 42, 0.04);
-  --shadow-md: 0 4px 6px rgba(15, 23, 42, 0.07), 0 2px 4px rgba(15, 23, 42, 0.04);
-  --shadow-lg: 0 10px 15px rgba(15, 23, 42, 0.08), 0 4px 6px rgba(15, 23, 42, 0.04);
-
-  /* ── Legacy aliases (compatibilidad) ── */
+  /* Legacy aliases — compatibilidad con EcosistemaLinks, NotaClinica */
   --primary: #0d9488;
-  --secondary: #64748b;
-  --bg: #ffffff;
-  --text: #0f172a;
-  --light: #f8fafc;
+  --secondary: #737373;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f9fafb;
+  --bg-tertiary: #f3f4f6;
+  --border-subtle: #e5e7eb;
+  --border-mid: #d1d5db;
+  --text-primary-v2: #1a1a1a;
 }
 
 /* ── Reset ─────────────────────────────────── */
@@ -72,23 +45,22 @@
 }
 
 html {
-  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--bg-primary);
+  font-family: var(--font);
+  background: var(--bg);
   color: var(--text-primary);
-  font-family: var(--font-body);
-  font-size: 16px;
-  line-height: 1.7;
+  font-size: 17px;
+  line-height: var(--reading-lh);
   min-height: 100vh;
 }
 
 img {
   max-width: 100%;
-  height: auto;
   display: block;
 }
 
@@ -101,18 +73,23 @@ a:hover {
   color: var(--accent-dark);
 }
 
-/* ── Scrollbar ─────────────────────────────── */
+/* ── Selección ─────────────────────────────── */
+::selection {
+  background: #ccfbf1;
+  color: var(--accent-dark);
+}
+
+/* ── Scrollbar discreta ─────────────────────── */
 ::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar-track {
-  background: var(--bg-secondary);
+  background: var(--bg);
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--border-mid);
+  background: var(--border);
   border-radius: 3px;
 }
 
@@ -120,38 +97,28 @@ a:hover {
   background: var(--accent);
 }
 
-/* ── Selección ─────────────────────────────── */
-::selection {
-  background: var(--accent-light);
-  color: var(--accent-dark);
-}
-
-/* ── Wiki content (RootLayout main) ────────── */
+/* ── wiki-content (RootLayout) ──────────────── */
 main.wiki-content {
-  background: transparent;
   max-width: 100%;
-  margin: 0;
-  padding: 0;
+  background: transparent;
   box-shadow: none;
   border-radius: 0;
+  padding: 0;
+  margin: 0;
 }
 
 /* ── Nota clínica ───────────────────────────── */
 .nota-clinica {
-  background: var(--bg-secondary);
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  padding: 14px 20px;
-  margin-top: 48px;
-  font-size: 12px;
-  color: var(--text-light);
-  line-height: 1.6;
+  margin-top: 52px;
+  padding-top: 28px;
+  border-top: 1px solid var(--border);
 }
 
 .nota-clinica p {
-  margin: 0;
+  font-size: 13px;
   color: var(--text-light);
-  font-size: 12px;
+  line-height: 1.7;
+  margin: 0;
 }
 
 .nota-clinica em {
@@ -160,38 +127,37 @@ main.wiki-content {
 
 /* ── Ecosystem blocks ───────────────────────── */
 .ecosystem-block {
-  margin: 24px 0;
-  padding: 20px 24px;
-  border: 1px solid var(--border-subtle);
-  border-radius: var(--radius-md);
-  background: var(--bg-secondary);
+  margin: 28px 0;
+  padding: 16px 20px;
+  border-left: 3px solid var(--border);
 }
 
-.ecosystem-block h3,
-.ecosystem-block h2 {
+.ecosystem-block h2,
+.ecosystem-block h3 {
   font-size: 11px !important;
   font-weight: 700 !important;
-  color: var(--accent) !important;
+  color: var(--text-muted) !important;
   text-transform: uppercase !important;
   letter-spacing: 0.1em !important;
-  margin-bottom: 12px !important;
+  margin-bottom: 8px !important;
+  margin-top: 0 !important;
   border: none !important;
   padding: 0 !important;
 }
 
+.ecosystem-block p {
+  font-size: 14px;
+  color: var(--text-muted);
+  margin-bottom: 4px !important;
+  line-height: 1.5 !important;
+}
+
 .ecosystem-block a {
-  color: var(--text-secondary);
+  color: var(--text-muted);
   font-size: 14px;
   border-bottom: none;
 }
 
 .ecosystem-block a:hover {
   color: var(--accent);
-}
-
-/* ── Responsive base ────────────────────────── */
-@media (max-width: 640px) {
-  body {
-    font-size: 15px;
-  }
 }

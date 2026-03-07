@@ -7,7 +7,7 @@ import '../styles/global.css';
 
 const { title, description, slug, cluster, bloques, schema_questions } = Astro.props;
 
-// Mapear cluster string completo (del frontmatter) → color
+// Cluster string completo del frontmatter → color hex
 const clusterColorMap: Record<string, string> = {
   'Fundamentos del perfil Asperger':  '#2563eb',
   'Comunicación Asperger':            '#0d9488',
@@ -30,8 +30,8 @@ const clusterLabelMap: Record<string, string> = {
   'Regulación emocional Asperger':    'Regulación emocional',
 };
 
-const clusterColor = cluster ? (clusterColorMap[cluster] ?? '#0d9488') : '#0d9488';
-const clusterLabel = cluster ? (clusterLabelMap[cluster] ?? cluster) : '';
+const color = cluster ? (clusterColorMap[cluster] ?? '#0d9488') : '#0d9488';
+const label = cluster ? (clusterLabelMap[cluster] ?? '') : '';
 
 let faqSchema = '';
 if (schema_questions && schema_questions.length > 0) {
@@ -81,166 +81,186 @@ if (schema_questions && schema_questions.length > 0) {
 </head>
 <body>
   <Header />
-  <main>
-    <div class="wiki-container">
-      <article class="wiki-article" style={`--cluster-color: ${clusterColor}`}>
+  <main class="main">
+    <article class="article" style={`--cc: ${color}`}>
 
-        {clusterLabel && (
-          <div class="article-meta">
-            <span
-              class="cluster-badge"
-              style={`color: ${clusterColor}; background: ${clusterColor}18; border-color: ${clusterColor}35`}
-            >
-              ● {clusterLabel}
-            </span>
-          </div>
-        )}
+      {label && (
+        <div class="article-cluster">
+          <span class="cluster-label" style={`color: ${color}`}>
+            {label}
+          </span>
+        </div>
+      )}
 
-        <slot />
+      <slot />
 
-        <EcosistemaLinks bloques={bloques || []} />
-        <NotaClinica />
-      </article>
-    </div>
+      <EcosistemaLinks bloques={bloques || []} />
+      <NotaClinica />
+    </article>
   </main>
   <Footer />
 </body>
 </html>
 
 <style>
-/* ── Contenedor ─────────────────────────────── */
-.wiki-container {
-  max-width: 760px;
-  margin: 0 auto;
-  padding: 48px 24px 80px;
+/* ── Layout ─────────────────────────────────── */
+.main {
+  padding: 56px 24px 100px;
 }
 
-/* ── Badge de cluster ───────────────────────── */
-.article-meta {
+.article {
+  max-width: var(--content-width);
+  margin: 0 auto;
+}
+
+/* ── Cluster label — solo texto, sin badge ── */
+.article-cluster {
+  margin-bottom: 20px;
+}
+
+.cluster-label {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-family: var(--font-mono);
+}
+
+/* ── H1 — título ────────────────────────────── */
+.article h1 {
+  font-size: clamp(28px, 5vw, 42px);
+  font-weight: 800;
+  color: var(--text-primary);
+  line-height: 1.2;
+  letter-spacing: -0.025em;
   margin-bottom: 24px;
 }
 
-.cluster-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
+/* ── H2 — secciones ─────────────────────────── */
+.article h2 {
   font-size: 11px;
-  font-weight: 600;
-  font-family: var(--font-body);
-  padding: 4px 12px;
-  border-radius: 20px;
-  border: 1px solid;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-}
-
-/* ── Tipografía del artículo ────────────────── */
-
-.wiki-article h1 {
-  font-size: clamp(26px, 4vw, 40px);
-  font-weight: 800;
-  color: var(--text-primary);
-  line-height: 1.15;
-  letter-spacing: -0.02em;
-  margin-bottom: 16px;
-}
-
-.wiki-article h2 {
-  font-size: 12px;
   font-weight: 700;
-  color: var(--cluster-color, var(--accent));
+  color: var(--cc);
   text-transform: uppercase;
-  letter-spacing: 0.1em;
-  margin-top: 44px;
+  letter-spacing: 0.12em;
+  margin-top: 52px;
   margin-bottom: 16px;
-  padding-bottom: 10px;
-  border-bottom: 2px solid var(--bg-tertiary);
-  font-family: var(--font-body);
+  font-family: var(--font);
+  border: none;
+  padding: 0;
 }
 
-.wiki-article h3 {
+/* ── H3 — subsecciones ──────────────────────── */
+.article h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--text-primary);
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+/* ── Párrafos ────────────────────────────────── */
+.article p {
   font-size: 17px;
-  font-weight: 700;
-  color: var(--text-primary);
-  margin-top: 28px;
-  margin-bottom: 10px;
-}
-
-.wiki-article p {
-  font-size: 16px;
   color: var(--text-secondary);
-  margin-bottom: 18px;
-  line-height: 1.8;
+  line-height: var(--reading-lh);
+  margin-bottom: 20px;
 }
 
-/* Definición destacada — primer párrafo */
-.wiki-article > p:first-of-type {
-  font-size: 17px;
-  font-weight: 400;
+/* ── Primer párrafo — definición ─────────────── */
+.article > p:first-of-type {
+  font-size: 18px;
   color: var(--text-primary);
+  font-weight: 400;
   line-height: 1.75;
-  background: var(--bg-secondary);
-  border-left: 4px solid var(--cluster-color, var(--accent));
-  padding: 20px 24px;
-  border-radius: 0 var(--radius-md) var(--radius-md) 0;
-  margin-bottom: 36px;
+  padding-left: 20px;
+  border-left: 3px solid var(--cc);
+  margin-bottom: 40px;
+  margin-top: 8px;
 }
 
-/* Links */
-.wiki-article a {
-  color: var(--cluster-color, var(--accent));
+/* ── Links ──────────────────────────────────── */
+.article a {
+  color: var(--cc);
   text-decoration: none;
   font-weight: 500;
   border-bottom: 1px solid transparent;
-  transition: border-color 0.2s;
+  transition: border-color 0.15s;
 }
 
-.wiki-article a:hover {
-  border-bottom-color: var(--cluster-color, var(--accent));
+.article a:hover {
+  border-bottom-color: var(--cc);
 }
 
-/* Strong */
-.wiki-article strong {
+/* ── Strong ─────────────────────────────────── */
+.article strong {
   color: var(--text-primary);
   font-weight: 600;
 }
 
-/* Listas */
-.wiki-article ul {
+/* ── Listas ─────────────────────────────────── */
+.article ul {
   list-style: none;
-  margin-bottom: 18px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;
-  gap: 8px;
+  gap: 10px;
 }
 
-.wiki-article ul li {
-  font-size: 15px;
+.article ul li {
+  font-size: 16px;
   color: var(--text-secondary);
-  padding-left: 22px;
-  position: relative;
   line-height: 1.7;
+  padding-left: 18px;
+  position: relative;
 }
 
-.wiki-article ul li::before {
-  content: '→';
+.article ul li::before {
+  content: '–';
   position: absolute;
   left: 0;
-  color: var(--cluster-color, var(--accent));
-  font-size: 13px;
-  top: 3px;
+  color: var(--cc);
+  font-weight: 700;
 }
 
-/* HR */
-.wiki-article hr {
+/* ── HR ─────────────────────────────────────── */
+.article hr {
   border: none;
-  border-top: 1px solid var(--border-subtle);
-  margin: 40px 0;
+  border-top: 1px solid var(--border);
+  margin: 48px 0;
 }
 
+/* ── Em (nota clínica inline si aplica) ─────── */
+.article > em {
+  display: block;
+  font-size: 13px;
+  font-style: normal;
+  color: var(--text-light);
+  line-height: 1.7;
+  padding-top: 28px;
+  margin-top: 52px;
+  border-top: 1px solid var(--border);
+}
+
+/* ── Blockquote (bloques ecosistema) ────────── */
+.article blockquote {
+  border-left: 3px solid var(--border);
+  padding: 4px 0 4px 20px;
+  margin: 32px 0;
+}
+
+.article blockquote p {
+  font-size: 15px;
+  color: var(--text-muted);
+  margin-bottom: 8px;
+}
+
+.article blockquote p:last-child { margin-bottom: 0; }
+
+/* ── Responsive ─────────────────────────────── */
 @media (max-width: 640px) {
-  .wiki-container { padding: 32px 20px 60px; }
-  .wiki-article > p:first-of-type { padding: 16px 18px; font-size: 15px; }
-  .wiki-article h1 { font-size: 26px; }
+  .main { padding: 40px 20px 80px; }
+  .article > p:first-of-type { font-size: 17px; }
+  .article h1 { font-size: 28px; }
 }
 </style>
