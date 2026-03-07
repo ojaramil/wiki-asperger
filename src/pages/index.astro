@@ -1,19 +1,18 @@
 ---
 import RootLayout from '../layouts/RootLayout.astro';
-import EcosistemaLinks from '../components/EcosistemaLinks.astro';
 import { getCollection } from 'astro:content';
 
 const entradas = await getCollection('wiki');
 
 const clusters = [
-  "Fundamentos del perfil Asperger",
-  "Comunicación Asperger",
-  "Experiencia interna Asperger",
-  "Vida social Asperger",
-  "Relaciones y pareja Asperger",
-  "Trabajo y vida adulta Asperger",
-  "Diagnóstico Asperger",
-  "Regulación emocional Asperger"
+  { name: "Fundamentos del perfil Asperger",  color: "#3b82f6", key: "fundamentos" },
+  { name: "Comunicación Asperger",             color: "#14b8a6", key: "comunicacion" },
+  { name: "Experiencia interna Asperger",      color: "#8b5cf6", key: "experiencia" },
+  { name: "Vida social Asperger",              color: "#f59e0b", key: "social" },
+  { name: "Relaciones y pareja Asperger",      color: "#f43f5e", key: "pareja" },
+  { name: "Trabajo y vida adulta Asperger",    color: "#22c55e", key: "trabajo" },
+  { name: "Diagnóstico Asperger",              color: "#fb923c", key: "diagnostico" },
+  { name: "Regulación emocional Asperger",     color: "#e879f9", key: "regulacion" },
 ];
 
 function getEntradasByCluster(clusterName: string) {
@@ -21,49 +20,80 @@ function getEntradasByCluster(clusterName: string) {
 }
 ---
 
-<RootLayout 
-  title="Base de conocimiento sobre el perfil Asperger en español" 
+<RootLayout
+  title="Base de conocimiento sobre el perfil Asperger en español"
   description="El Asperger como identidad neurocognitiva — desde la experiencia real. Wiki, comunidad e inclusión completa."
 >
-  <h1>Base de conocimiento sobre el perfil Asperger en español</h1>
-  <p class="bajada">El Asperger como identidad neurocognitiva — desde la experiencia real</p>
+  <!-- Hero -->
+  <section class="home-hero">
+    <p class="hero-eyebrow">wiki · asperger para asperger</p>
+    <h1 class="hero-title">
+      El perfil Asperger<br>
+      <span>desde adentro.</span>
+    </h1>
+    <p class="hero-description">
+      Base de conocimiento sobre el perfil neurocognitivo Asperger.
+      Sin lenguaje clínico. Sin plantillas. Desde la experiencia real.
+    </p>
 
-  <EcosistemaLinks bloques={["A", "B", "C", "D", "E", "F", "G", "H"]} />
+    <!-- Buscador -->
+    <div class="search-wrapper">
+      <input
+        type="text"
+        id="searchInput"
+        class="search-input"
+        placeholder="Buscar en la wiki..."
+        autocomplete="off"
+        spellcheck="false"
+      />
+    </div>
+  </section>
 
-  <div class="search-box">
-    <input type="text" id="searchInput" placeholder="Buscar en la wiki..." />
-  </div>
-
-  <div class="wiki-clusters" id="clustersContainer">
-    {clusters.map(cluster => (
-      <div class="cluster-card" data-cluster={cluster}>
-        <h2>{cluster}</h2>
-        <ul>
-          {getEntradasByCluster(cluster).map(entrada => (
-            <li>
-              <a href={`/${entrada.slug}`} class="node-link">{entrada.data.title}</a>
-            </li>
-          ))}
-        </ul>
-      </div>
-    ))}
+  <!-- Grid de clusters -->
+  <div class="clusters-grid" id="clustersContainer">
+    {clusters.map(cluster => {
+      const items = getEntradasByCluster(cluster.name);
+      if (items.length === 0) return null;
+      return (
+        <div class="cluster-card" style={`--cluster-color: ${cluster.color}`} data-cluster={cluster.name}>
+          <div class="cluster-card-header">
+            <span class="cluster-card-dot">●</span>
+            <span class="cluster-card-title">{cluster.name}</span>
+          </div>
+          <div class="cluster-links">
+            {items.map(entrada => (
+              <a href={`/${entrada.slug}`} class="node-link">
+                {entrada.data.title}
+              </a>
+            ))}
+          </div>
+        </div>
+      );
+    })}
   </div>
 
   <script>
-    const searchInput = document.getElementById('searchInput');
+    const searchInput = document.getElementById('searchInput') as HTMLInputElement;
     const links = document.querySelectorAll('.node-link');
+    const cards = document.querySelectorAll('.cluster-card') as NodeListOf<HTMLElement>;
 
-    if(searchInput) {
+    if (searchInput) {
       searchInput.addEventListener('input', (e) => {
-        const term = (e.target as HTMLInputElement).value.toLowerCase();
+        const term = (e.target as HTMLInputElement).value.toLowerCase().trim();
+
         links.forEach(link => {
           const text = (link.textContent || '').toLowerCase();
-          const li = link.closest('li') as HTMLElement;
-          if(text.includes(term)) {
-            li.style.display = 'block';
-          } else {
-            li.style.display = 'none';
+          const li = link.closest('a') as HTMLElement;
+          if (li) {
+            li.style.display = text.includes(term) ? '' : 'none';
           }
+        });
+
+        // Ocultar cards vacías durante búsqueda
+        cards.forEach(card => {
+          const visible = Array.from(card.querySelectorAll('.node-link'))
+            .some(l => (l as HTMLElement).style.display !== 'none');
+          card.style.display = term === '' ? '' : (visible ? '' : 'none');
         });
       });
     }
@@ -71,51 +101,179 @@ function getEntradasByCluster(clusterName: string) {
 </RootLayout>
 
 <style>
-  .bajada {
-    font-size: 1.2rem;
-    color: var(--secondary);
-    margin-bottom: 2rem;
+/* ── Hero ─────────────────────────────────── */
+.home-hero {
+  padding: 72px 24px 48px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.home-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 700px;
+  height: 320px;
+  background: radial-gradient(ellipse at center,
+    rgba(20,184,166,0.07) 0%,
+    transparent 70%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.hero-eyebrow {
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--accent-teal);
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title {
+  font-family: var(--font-display);
+  font-size: clamp(30px, 5vw, 54px);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.15;
+  letter-spacing: -0.03em;
+  margin-bottom: 20px;
+  max-width: 680px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero-title span {
+  color: var(--accent-teal);
+}
+
+.hero-description {
+  font-size: 16px;
+  color: var(--text-secondary);
+  max-width: 520px;
+  line-height: 1.7;
+  margin-bottom: 36px;
+  position: relative;
+  z-index: 1;
+}
+
+/* ── Buscador ─────────────────────────────── */
+.search-wrapper {
+  position: relative;
+  z-index: 1;
+  max-width: 460px;
+}
+
+.search-input {
+  width: 100%;
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-mid);
+  border-radius: var(--radius-md);
+  padding: 12px 18px;
+  font-family: var(--font-body);
+  font-size: 14px;
+  color: var(--text-primary);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.search-input:focus {
+  border-color: var(--accent-teal);
+  box-shadow: 0 0 0 3px rgba(20,184,166,0.1);
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}
+
+/* ── Clusters grid ────────────────────────── */
+.clusters-grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 8px 24px 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.cluster-card {
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 22px 24px 24px;
+  transition: border-color 0.2s, transform 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.cluster-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--cluster-color);
+  opacity: 0.8;
+}
+
+.cluster-card:hover {
+  border-color: var(--border-mid);
+  transform: translateY(-2px);
+}
+
+.cluster-card-header {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 16px;
+}
+
+.cluster-card-dot {
+  font-size: 8px;
+  color: var(--cluster-color);
+  line-height: 1;
+}
+
+.cluster-card-title {
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--cluster-color);
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.cluster-links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.cluster-links a.node-link {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.15s;
+  padding: 3px 0;
+  line-height: 1.4;
+  border-bottom: none;
+}
+
+.cluster-links a.node-link:hover {
+  color: var(--text-primary);
+}
+
+/* ── Responsive ──────────────────────────── */
+@media (max-width: 640px) {
+  .home-hero { padding: 48px 20px 36px; }
+  .clusters-grid {
+    grid-template-columns: 1fr;
+    padding: 8px 20px 60px;
   }
-  .search-box {
-    margin: 2rem 0;
-  }
-  .search-box input {
-    width: 100%;
-    padding: 1rem;
-    font-size: 1rem;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    box-sizing: border-box;
-  }
-  .cluster-card {
-    background: #fff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-    padding: 1.5rem;
-    margin-bottom: 2rem;
-  }
-  .cluster-card h2 {
-    margin-top: 0;
-    color: var(--primary);
-    border-bottom: 2px solid var(--primary);
-    padding-bottom: 0.5rem;
-    font-size: 1.25rem;
-  }
-  .cluster-card ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 1rem;
-  }
-  .cluster-card li a {
-    display: block;
-    padding: 0.5rem 0;
-    text-decoration: none;
-    font-weight: 500;
-  }
-  .cluster-card li a:hover {
-    text-decoration: underline;
-  }
+}
 </style>

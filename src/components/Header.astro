@@ -1,14 +1,97 @@
 ---
 ---
-<header>
-  <a href="https://www.aspergerparaasperger.org" class="logo">
-    Asperger para Asperger
-  </a>
-  <nav>
-    <a href="https://wiki.aspergerparaasperger.org">Wiki</a>
-    <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
-    <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
-    <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/">Club</a>
-    <a href="https://www.aspergerparaasperger.org/plan-embajador-asperger-para-asperger/">Inclusión laboral</a>
-  </nav>
+<header class="site-header">
+  <div class="header-inner">
+    <a href="/" class="header-logo">
+      <span class="logo-mono">wiki.</span>
+      <span class="logo-name">aspergerparaasperger</span>
+    </a>
+    <nav class="header-nav">
+      <a href="https://www.aspergerparaasperger.org/blog">Blog</a>
+      <a href="https://comunidad.aspergerparaasperger.org/invitation?code=9J8594">Comunidad</a>
+      <a href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/" class="nav-cta">Club</a>
+    </nav>
+  </div>
 </header>
+
+<style>
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: rgba(10,14,26,0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header-logo {
+  text-decoration: none;
+  display: flex;
+  align-items: baseline;
+  gap: 1px;
+}
+
+.logo-mono {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--accent-teal);
+  letter-spacing: 0.05em;
+}
+
+.logo-name {
+  font-family: var(--font-display);
+  font-size: 13px;
+  color: var(--text-muted);
+  letter-spacing: 0.03em;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header-nav a {
+  font-size: 13px;
+  color: var(--text-secondary);
+  text-decoration: none;
+  transition: color 0.2s;
+  letter-spacing: 0.02em;
+  font-family: var(--font-body);
+}
+
+.header-nav a:hover { color: var(--text-primary); }
+
+.nav-cta {
+  background: var(--accent-teal) !important;
+  color: var(--bg-primary) !important;
+  padding: 6px 14px;
+  border-radius: var(--radius-sm);
+  font-weight: 600 !important;
+  font-size: 12px !important;
+  letter-spacing: 0.05em;
+  transition: opacity 0.2s !important;
+}
+
+.nav-cta:hover {
+  opacity: 0.85;
+  color: var(--bg-primary) !important;
+}
+
+@media (max-width: 640px) {
+  .header-nav { gap: 16px; }
+  .header-nav a:not(.nav-cta) { display: none; }
+  .logo-name { display: none; }
+}
+</style>

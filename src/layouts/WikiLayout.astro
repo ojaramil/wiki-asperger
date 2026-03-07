@@ -4,9 +4,21 @@ import Footer from '../components/Footer.astro';
 import NotaClinica from '../components/NotaClinica.astro';
 import EcosistemaLinks from '../components/EcosistemaLinks.astro';
 import '../styles/global.css';
-import { marked } from 'marked';
 
-const { title, description, slug, bloques, schema_questions } = Astro.props;
+const { title, description, slug, cluster, bloques, schema_questions } = Astro.props;
+
+const clusterColors: Record<string, string> = {
+  'Fundamentos del perfil Asperger':  '#3b82f6',
+  'Comunicación Asperger':            '#14b8a6',
+  'Experiencia interna Asperger':     '#8b5cf6',
+  'Vida social Asperger':             '#f59e0b',
+  'Relaciones y pareja Asperger':     '#f43f5e',
+  'Trabajo y vida adulta Asperger':   '#22c55e',
+  'Diagnóstico Asperger':             '#fb923c',
+  'Regulación emocional Asperger':    '#e879f9',
+};
+
+const accentColor = cluster ? (clusterColors[cluster] ?? '#14b8a6') : '#14b8a6';
 
 let faqSchema = '';
 if (schema_questions && schema_questions.length > 0) {
@@ -22,7 +34,6 @@ if (schema_questions && schema_questions.length > 0) {
     ]
   }`;
 }
-
 ---
 <!DOCTYPE html>
 <html lang="es">
@@ -58,12 +69,38 @@ if (schema_questions && schema_questions.length > 0) {
 <body>
   <Header />
   <main class="wiki-content">
-    <slot />
-    
-    <EcosistemaLinks bloques={bloques || []} />
-    <hr/>
-    <NotaClinica />
+    <article class="wiki-article" style={`--cluster-accent: ${accentColor}`}>
+      <!-- Cluster badge -->
+      {cluster && (
+        <span class="cluster-badge" style={`--c: ${accentColor}`}>
+          ● {cluster}
+        </span>
+      )}
+      <slot />
+      <EcosistemaLinks bloques={bloques || []} />
+      <hr />
+      <NotaClinica />
+    </article>
   </main>
   <Footer />
 </body>
 </html>
+
+<style>
+/* Cluster badge */
+.cluster-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-family: var(--font-display);
+  font-size: 10px;
+  color: var(--c);
+  background: color-mix(in srgb, var(--c) 10%, transparent);
+  border: 1px solid color-mix(in srgb, var(--c) 25%, transparent);
+  padding: 4px 10px;
+  border-radius: 20px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+</style>
