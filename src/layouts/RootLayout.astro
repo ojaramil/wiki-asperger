@@ -13,6 +13,16 @@ const { title, description } = Astro.props;
   <title>{title} | Asperger para Asperger</title>
   <meta name="description" content={description} />
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FKKFDEEVWZ"></script>
+  <script is:inline>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FKKFDEEVWZ');
+  </script>
 </head>
 <body>
   <Header />
