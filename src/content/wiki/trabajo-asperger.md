@@ -2,7 +2,7 @@
 title: "Trabajo Asperger"
 description: "El perfil Asperger en el trabajo no es el problema. El problema es cuando el entorno laboral está diseñado para un tipo de cerebro que no es el tuyo. Qué funciona, qué no funciona y por qué — desde adentro."
 cluster: "Trabajo y vida adulta Asperger"
-related: ["sensibilidad-sensorial-asperger", "evaluacion-psicologica-asperger", "soledad-adultos-asperger"]
+related: ["autenticamente-capaces", "plan-embajador-asperger", "sensibilidad-sensorial-asperger", "evaluacion-psicologica-asperger"]
 keywords: ["trabajo asperger", "trabajo asperger autismo", "perfil asperger trabajo asperger"]
 bloques: ["C", "D", "G", "F"]
 schema_questions:
@@ -98,6 +98,7 @@ varios recursos pensados específicamente para el perfil neurocognitivo Asperger
   — recursos y herramientas para el perfil Asperger
 
 ## Relacionado con el perfil Asperger
+- [Autenticamente Capaces](/autenticamente-capaces)
+- [Plan Embajador Asperger para Asperger](/plan-embajador-asperger)
 - [Sensibilidad Sensorial Asperger](/sensibilidad-sensorial-asperger)
 - [Evaluación Psicológica Asperger](/evaluacion-psicologica-asperger)
-- [Soledad en Adultos Asperger](/soledad-adultos-asperger)

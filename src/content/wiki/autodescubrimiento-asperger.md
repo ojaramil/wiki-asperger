@@ -2,7 +2,7 @@
 title: "Autodescubrimiento Asperger"
 description: "El autodescubrimiento Asperger es el proceso de reconocerse en el perfil — a través de una lectura, un video, una conversación — y sentir que algo que no tenía nombre de repente lo tiene. No requiere un diagnóstico formal para ser real."
 cluster: "Diagnóstico Asperger"
-related: ["buscar-profesional-asperger", "sensibilidad-sensorial-asperger", "intereses-especiales-asperger"]
+related: ["revista-asperger-para-asperger", "buscar-profesional-asperger", "sensibilidad-sensorial-asperger", "intereses-especiales-asperger"]
 keywords: ["autodescubrimiento asperger", "autodescubrimiento asperger autismo", "perfil asperger autodescubrimiento asperger"]
 bloques: ["A", "B", "F"]
 schema_questions:
@@ -102,6 +102,7 @@ encontrarás personas con perfil Asperger que comparten experiencias
 reales sobre identidad y autodescubrimiento.
 
 ## Relacionado con el perfil Asperger
+- [Revista Asperger para Asperger](/revista-asperger-para-asperger)
 - [Buscar Profesional Asperger](/buscar-profesional-asperger)
 - [Sensibilidad Sensorial Asperger](/sensibilidad-sensorial-asperger)
 - [Intereses Especiales Asperger](/intereses-especiales-asperger)

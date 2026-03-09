@@ -2,7 +2,7 @@
 title: "Fortalezas Asperger"
 description: "Las fortalezas del perfil Asperger no son compensaciones ni consuelos. Son consecuencias directas del mismo cerebro que también genera las dificultades. Reales, documentadas y específicas — no una lista de superpoderes."
 cluster: "Fundamentos del perfil Asperger"
-related: ["empatia-asperger", "mitos-asperger", "pensamiento-sistematico-asperger"]
+related: ["autenticamente-capaces", "empatia-asperger", "mitos-asperger", "pensamiento-sistematico-asperger"]
 keywords: ["fortalezas asperger", "fortalezas asperger autismo", "perfil asperger fortalezas asperger"]
 bloques: ["C", "D", "G", "F"]
 schema_questions:
@@ -80,6 +80,7 @@ No es una ecuación. Las fortalezas y las dificultades coexisten — no se cance
 Observa dónde entra el hiperfoco de forma natural. Qué tipo de problemas resuelves con más facilidad que los demás. En qué te piden ayuda específicamente las personas que mejor te conocen. Las fortalezas Asperger rara vez son obvias para el propio cerebro Asperger porque, desde adentro, son simplemente la forma normal de funcionar. Muchas veces son más visibles para los demás que para uno mismo.
 
 ## Relacionado con el perfil Asperger
+- [Autenticamente Capaces](/autenticamente-capaces)
 - [Empatía Asperger](/empatia-asperger)
 - [Mitos sobre el Asperger](/mitos-asperger)
 - [Pensamiento Sistemático Asperger](/pensamiento-sistematico-asperger)

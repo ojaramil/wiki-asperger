@@ -2,7 +2,7 @@
 title: "Cerebro Asperger"
 description: "El cerebro Asperger no es un cerebro defectuoso: es un cerebro con un sistema operativo diferente. Procesa el mundo con más detalle, más profundidad y menos filtros sociales automáticos."
 cluster: "Fundamentos del perfil Asperger"
-related: ["senales-sociales-asperger", "alexitimia-asperger", "rigidez-cognitiva-asperger"]
+related: ["revista-asperger-para-asperger", "senales-sociales-asperger", "alexitimia-asperger", "rigidez-cognitiva-asperger"]
 keywords: ["cerebro asperger", "cerebro asperger autismo", "perfil asperger cerebro asperger"]
 bloques: ["G", "F"]
 schema_questions:
@@ -76,6 +76,7 @@ No es ni más ni menos inteligente: procesa diferente. Tiene tendencia a la prof
 Pensamiento sistemático. Atención al detalle. Concentración profunda en los temas de interés. Memoria asociativa. Honestidad directa. Reconocimiento de patrones. Capacidad de detectar incoherencias en sistemas complejos. No como superpoderes. Como consecuencia natural de cómo está organizado ese cerebro.
 
 ## Relacionado con el perfil Asperger
+- [Revista Asperger para Asperger](/revista-asperger-para-asperger)
 - [Señales Sociales Asperger](/senales-sociales-asperger)
 - [Alexitimia Asperger](/alexitimia-asperger)
 - [Rigidez Cognitiva Asperger](/rigidez-cognitiva-asperger)

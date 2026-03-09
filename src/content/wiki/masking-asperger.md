@@ -2,7 +2,7 @@
 title: "Masking Asperger"
 description: "El masking Asperger es el proceso de suprimir o modificar el comportamiento natural del perfil Asperger para adaptarse a las expectativas del entorno neurotípico. Puede ser consciente o completamente automático. Siempre tiene un coste."
 cluster: "Experiencia interna Asperger"
-related: ["empatia-asperger", "recuperacion-burnout-asperger", "asperger-ninos"]
+related: ["plan-embajador-asperger", "empatia-asperger", "recuperacion-burnout-asperger", "asperger-ninos"]
 keywords: ["masking asperger", "masking asperger autismo", "perfil asperger masking asperger"]
 bloques: ["G", "A", "F"]
 schema_questions:
@@ -82,6 +82,7 @@ Algunas señales reconocibles: eres una persona completamente diferente en casa 
 Reducirlo sí, especialmente en entornos seguros donde el perfil Asperger es comprendido. Eliminarlo completamente en todos los contextos no es ni realista ni necesariamente el objetivo. Lo saludable no es eliminar todo ajuste social sino distinguir qué parte del masking adapta comportamiento sin coste de autenticidad y qué parte suprime identidad. Conservar lo primero, trabajar para reducir lo segundo.
 
 ## Relacionado con el perfil Asperger
+- [Plan Embajador Asperger para Asperger](/plan-embajador-asperger)
 - [Empatía Asperger](/empatia-asperger)
 - [Recuperación Burnout Asperger](/recuperacion-burnout-asperger)
 - [Asperger en la Infancia](/asperger-ninos)
