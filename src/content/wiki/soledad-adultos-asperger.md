@@ -2,7 +2,7 @@
 title: "Soledad Adultos Asperger"
 description: "Todo lo que necesitas saber sobre soledad adultos asperger. Cómo se vive desde el perfil neurocognitivo Asperger en la vida real."
 cluster: "Vida social Asperger"
-related: ["asperger-mujeres", "fatiga-social-asperger", "burnout-asperger"]
+related: ["comunidad-asperger-para-asperger", "asperger-mujeres", "fatiga-social-asperger", "burnout-asperger"]
 keywords: ["soledad adultos asperger", "soledad adultos asperger autismo", "perfil asperger soledad adultos asperger"]
 bloques: ["B", "A", "F"]
 schema_questions:
@@ -109,6 +109,7 @@ No necesariamente, aunque hay factores que pueden hacer que se haga más visible
 
 ## Relacionado con el perfil Asperger
 
+- [Comunidad Asperger para Asperger](/comunidad-asperger-para-asperger)
 - [Asperger Mujeres](/asperger-mujeres)
 - [Fatiga Social Asperger](/fatiga-social-asperger)
 - [Burnout Asperger](/burnout-asperger)

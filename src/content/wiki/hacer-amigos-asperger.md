@@ -2,7 +2,7 @@
 title: "Hacer Amigos Asperger"
 description: "Hacer amigos siendo Asperger no es imposible. Es diferente. El perfil Asperger conecta profundamente cuando hay intereses compartidos y ausencia de masking — condiciones que la socialización neurotípica estándar raramente ofrece."
 cluster: "Vida social Asperger"
-related: ["rigidez-cognitiva-asperger", "amistad-asperger", "asperger-vs-autismo"]
+related: ["comunidad-asperger-para-asperger", "rigidez-cognitiva-asperger", "amistad-asperger", "asperger-vs-autismo"]
 keywords: ["hacer amigos asperger", "hacer amigos asperger autismo", "perfil asperger hacer amigos asperger"]
 bloques: ["B", "F"]
 schema_questions:
@@ -73,13 +73,14 @@ Las amistades que funcionan mejor para el perfil Asperger tienen comunicación d
 **¿Dónde conocer personas que entiendan el perfil Asperger?**
 Comunidades Asperger y de neurodivergencia — presenciales o virtuales — son entornos donde el masking no es necesario y donde la comprensión mutua ya está. Los grupos de interés específico también funcionan muy bien: cuando la conexión parte del contenido y no del protocolo social, el perfil Asperger se desenvuelve de forma natural. Las amistades más sólidas del perfil Asperger frecuentemente nacen de interés compartido, no de socialización genérica.
 
-## Encuentra tu lugar — Club social y educativo
+## Encuentra tu lugar — Comunidad Asperger
 
-El [Club Social y Educativo Asperger para Asperger](https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/)
-es un programa de pertenencia donde puedes conectar con otras personas
+La [Comunidad Asperger para Asperger](/comunidad-asperger-para-asperger)
+es un espacio de pertenencia donde puedes conectar con otras personas
 con perfil Asperger sin necesidad de enmascarar.
 
 ## Relacionado con el perfil Asperger
+- [Comunidad Asperger para Asperger](/comunidad-asperger-para-asperger)
 - [Rigidez Cognitiva Asperger](/rigidez-cognitiva-asperger)
 - [Amistad Asperger](/amistad-asperger)
 - [Asperger vs Autismo](/asperger-vs-autismo)

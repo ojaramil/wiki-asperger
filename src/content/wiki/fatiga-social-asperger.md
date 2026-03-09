@@ -2,7 +2,7 @@
 title: "Fatiga Social Asperger"
 description: "La fatiga social Asperger no es introversión. Es el agotamiento neurológico que ocurre cuando el cerebro Asperger procesa un entorno social durante demasiado tiempo — aunque el evento haya sido agradable y las personas presentes sean queridas."
 cluster: "Experiencia interna Asperger"
-related: ["conflictos-pareja-asperger", "asperger-vs-autismo", "que-es-asperger"]
+related: ["comunidad-asperger-para-asperger", "conflictos-pareja-asperger", "asperger-vs-autismo", "que-es-asperger"]
 keywords: ["fatiga social asperger", "fatiga social asperger autismo", "perfil asperger fatiga social asperger"]
 bloques: ["B", "F"]
 schema_questions:
@@ -74,6 +74,7 @@ No hay un número fijo. Depende de la duración del evento, la intensidad sensor
 No desaparece. Pero muchas personas Asperger aprenden con el tiempo a reconocer sus señales antes del colapso, a calcular cuánta energía social tienen disponible y a proteger el tiempo de recuperación. El objetivo no es eliminar la fatiga — eso no está en las opciones — sino no llegar al agotamiento severo por haber ignorado las señales durante demasiado tiempo.
 
 ## Relacionado con el perfil Asperger
+- [Comunidad Asperger para Asperger](/comunidad-asperger-para-asperger)
 - [Conflictos en Pareja Asperger](/conflictos-pareja-asperger)
 - [Asperger vs Autismo](/asperger-vs-autismo)
 - [Qué es el Asperger](/que-es-asperger)
