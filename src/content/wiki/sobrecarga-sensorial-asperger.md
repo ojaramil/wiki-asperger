@@ -2,7 +2,7 @@
 title: "Sobrecarga Sensorial Asperger"
 description: "La sobrecarga sensorial Asperger no es que 'le molesta el ruido'. Es que el sistema nervioso Asperger procesa los estímulos del entorno con una intensidad que el cerebro neurotípico no experimenta. No es exageración. Es neurología."
 cluster: "Experiencia interna Asperger"
-related: ["fatiga-social-asperger", "que-es-asperger", "perfil-neurocognitivo-asperger"]
+related: ["escudo-seguro-asperger", "fatiga-social-asperger", "que-es-asperger", "perfil-neurocognitivo-asperger"]
 keywords: ["sobrecarga sensorial asperger", "sobrecarga sensorial asperger autismo", "perfil asperger sobrecarga sensorial asperger"]
 bloques: ["E", "H", "F"]
 schema_questions:
@@ -93,6 +93,7 @@ En la [Tienda Asperger para Asperger](https://tienda.aspergerparaasperger.org)
 encontrarás recursos y herramientas pensados para el perfil neurocognitivo Asperger.
 
 ## Relacionado con el perfil Asperger
+- [Escudo Seguro Asperger](/escudo-seguro-asperger)
 - [Fatiga Social Asperger](/fatiga-social-asperger)
 - [Qué es el Asperger](/que-es-asperger)
 - [Perfil Neurocognitivo Asperger](/perfil-neurocognitivo-asperger)

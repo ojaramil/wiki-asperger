@@ -2,7 +2,7 @@
 title: "Hiperfoco Asperger"
 description: "El hiperfoco Asperger es la capacidad del cerebro Asperger de sumergirse completamente en un tema o tarea con una concentración que no depende de esfuerzo ni disciplina. No es voluntario. Simplemente ocurre."
 cluster: "Experiencia interna Asperger"
-related: ["club-social-educativo-asperger", "fatiga-social-asperger", "empatia-asperger", "regulacion-emocional-asperger"]
+related: ["monotropismo-asperger", "club-social-educativo-asperger", "fatiga-social-asperger", "empatia-asperger", "regulacion-emocional-asperger"]
 keywords: ["hiperfoco asperger", "hiperfoco asperger autismo", "perfil asperger hiperfoco asperger"]
 bloques: ["C", "G", "D", "F"]
 schema_questions:
@@ -64,6 +64,7 @@ No. La obsesión clínica genera angustia: la persona quiere parar y no puede. E
 El hiperfoco rinde mejor en entornos con problemas reales que resolver, bloques de tiempo sin interrupciones y autonomía sobre cómo trabajar. Alinear el área de trabajo con los intereses genuinos del perfil Asperger no es un lujo: es la condición que convierte el hiperfoco en una ventaja profesional sostenible y real.
 
 ## Relacionado con el perfil Asperger
+- [Monotropismo Asperger](/monotropismo-asperger)
 - [Club Social y Educativo Asperger para Asperger](/club-social-educativo-asperger)
 - [Fatiga Social Asperger](/fatiga-social-asperger)
 - [Empatía Asperger](/empatia-asperger)

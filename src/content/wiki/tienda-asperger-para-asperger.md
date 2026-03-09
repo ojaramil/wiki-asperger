@@ -2,7 +2,7 @@
 title: "Tienda Asperger para Asperger"
 description: "Recursos y materiales seleccionados para el perfil Asperger. Utilidad real, sin lenguaje condescendiente. Parte de la infraestructura del ecosistema."
 cluster: "Soluciones"
-related: ["libros-asperger-autismo", "comunidad-asperger-para-asperger", "recursos-asperger"]
+related: ["club-social-educativo-asperger", "libros-asperger-autismo", "comunidad-asperger-para-asperger"]
 keywords: ["tienda asperger", "productos asperger", "tienda asperger para asperger"]
 bloques: ["S", "R"]
 schema_questions:
@@ -48,9 +48,9 @@ Algunos recursos del ecosistema son gratuitos y accesibles directamente, como la
 Sí. Los recursos disponibles son producidos o seleccionados por el mismo equipo que sostiene el ecosistema, con el mismo criterio editorial: desde adentro del perfil, para el perfil.
 
 ## Relacionado con el perfil Asperger
+- [Club Social y Educativo Asperger](/club-social-educativo-asperger)
 - [Libros de Asperger y Autismo](/libros-asperger-autismo)
 - [Comunidad Asperger para Asperger](/comunidad-asperger-para-asperger)
-- [Recursos Asperger](/recursos-asperger)
 
 ---
 

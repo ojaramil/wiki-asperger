@@ -2,7 +2,7 @@
 title: "Comunicacion Asperger"
 description: "El estilo comunicativo Asperger es directo, preciso y sin capas implícitas. No es incorrecto: es diferente. Los malentendidos no ocurren porque el perfil Asperger comunica mal — ocurren porque dos sistemas de comunicación distintos se encuentran sin un manual de traducción."
 cluster: "Comunicación Asperger"
-related: ["hacer-amigos-asperger", "shutdown-asperger", "autodescubrimiento-asperger"]
+related: ["sobreexplicacion-asperger", "hacer-amigos-asperger", "shutdown-asperger", "autodescubrimiento-asperger"]
 keywords: ["comunicacion asperger", "comunicacion asperger autismo", "perfil asperger comunicacion asperger"]
 bloques: ["B", "F"]
 schema_questions:
@@ -84,6 +84,7 @@ Porque el "filtro" social — decir lo socialmente esperado aunque no sea lo que
 Es el concepto del investigador Damian Milton que propone que los malentendidos entre personas Asperger y neurotípicas son bidireccionales. No solo el cerebro Asperger tiene dificultad para decodificar las claves sociales neurotípicas: el cerebro neurotípico también tiene dificultad para leer correctamente el estilo comunicativo Asperger. La barrera de comprensión funciona en ambas direcciones. Y eso cambia completamente de quién es "el problema".
 
 ## Relacionado con el perfil Asperger
+- [Sobreexplicación Asperger](/sobreexplicacion-asperger)
 - [Hacer Amigos Asperger](/hacer-amigos-asperger)
 - [Shutdown Asperger](/shutdown-asperger)
 - [Autodescubrimiento Asperger](/autodescubrimiento-asperger)

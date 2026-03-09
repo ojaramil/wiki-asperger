@@ -2,7 +2,7 @@
 title: "Comunidad Asperger para Asperger"
 description: "Un espacio hecho desde adentro del perfil Asperger, para el perfil Asperger. Sin divulgación, sin clínicos, sin tener que explicarse."
 cluster: "Soluciones"
-related: ["hacer-amigos-asperger", "soledad-adultos-asperger", "fatiga-social-asperger"]
+related: ["tienda-asperger-para-asperger", "signal-radio-club-asperger", "hacer-amigos-asperger", "soledad-adultos-asperger"]
 keywords: ["comunidad asperger", "comunidad asperger online", "comunidad asperger para asperger"]
 bloques: ["S", "C"]
 schema_questions:
@@ -69,9 +69,10 @@ Es una posibilidad real y honesta. No todos los cerebros Asperger son iguales. P
 Sí. No hay un nivel mínimo de autoconocimiento requerido. Hay personas que llegan con años de trabajo propio y personas que acaban de identificarse con el perfil. Ambas tienen lugar.
 
 ## Relacionado con el perfil Asperger
+- [Tienda Asperger para Asperger](/tienda-asperger-para-asperger)
+- [Signal Radio Club](/signal-radio-club-asperger)
 - [Hacer Amigos Asperger](/hacer-amigos-asperger)
 - [Soledad Adultos Asperger](/soledad-adultos-asperger)
-- [Fatiga Social Asperger](/fatiga-social-asperger)
 
 ---
 
