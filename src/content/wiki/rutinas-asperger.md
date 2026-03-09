@@ -80,3 +80,16 @@ Las que liberen energía sin consumirla. Si mantener una rutina requiere más es
 - [Hiperfoco Asperger](/hiperfoco-asperger)
 - [Regulación Emocional Asperger](/regulacion-emocional-asperger)
 - [Malentendidos Asperger](/malentendidos-asperger)
+
+## Recursos para el perfil Asperger
+
+En la [Tienda Asperger para Asperger](https://tienda.aspergerparaasperger.org)
+encontrarás recursos y herramientas pensados para el perfil neurocognitivo Asperger —
+incluyendo materiales de organización, planificación y regulación adaptados
+a cómo funciona realmente el cerebro Asperger.
+
+## Desde la experiencia real
+
+En el [blog de Asperger para Asperger](https://www.aspergerparaasperger.org/blog)
+encontrarás artículos escritos desde la experiencia directa del perfil Asperger —
+no desde el manual clínico.
