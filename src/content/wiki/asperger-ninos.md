@@ -6,12 +6,14 @@ related: ["ansiedad-social-asperger", "asperger-vs-autismo", "soledad-adultos-as
 keywords: ["asperger ninos", "asperger ninos autismo", "perfil asperger asperger ninos"]
 bloques: ["F"]
 schema_questions:
-  - question: "¿Qué es asperger ninos en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es asperger ninos algo que se puede curar?"
-    answer: "No. asperger ninos forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Cómo se manifiesta el perfil Asperger en niños?"
+    answer: "Con intereses muy intensos y específicos, dificultad para leer reglas implícitas sociales, sensibilidad sensorial notable, comunicación muy directa y literal, y dificultad para regular emociones en entornos de alta estimulación. No es problema de conducta ni falta de voluntad — es una diferencia de procesamiento que nadie ha explicado todavía."
+  - question: "¿Cómo sé si mi hijo es Asperger?"
+    answer: "Hay señales que orientan: dificultad con las reglas implícitas de las relaciones, intereses muy intensos, sensibilidad sensorial notable, comunicación muy literal, y la sensación de que el niño no encaja aunque sea claramente inteligente. Si ese patrón es consistente, el paso siguiente es una evaluación con un profesional especializado en neurodivergencia."
+  - question: "¿Un niño Asperger debe ir a una escuela especial?"
+    answer: "En la mayoría de los casos no. Los niños Asperger suelen estar bien en entornos ordinarios cuando hay comprensión del perfil y ajustes concretos. Lo que marca la diferencia no es el tipo de escuela sino si hay alguien en el equipo docente que entienda el perfil y sepa cómo trabajar con él."
+  - question: "¿Cómo ayudar a un niño Asperger sin sobreprotegerle?"
+    answer: "La línea está entre adaptar el entorno y evitar el mundo. Adaptar significa darle herramientas, explicarle las reglas implícitas y reducir sobrecarga innecesaria. Sobreproteger es evitarle cualquier situación difícil. El objetivo es que tenga recursos para gestionar las dificultades, no que no las tenga."
 ---
 
 ## El niño Asperger: qué está pasando realmente

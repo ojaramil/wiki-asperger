@@ -4,14 +4,15 @@ description: "Todo lo que necesitas saber sobre asperger vs autismo. Cómo se vi
 cluster: "Fundamentos del perfil Asperger"
 related: ["fortalezas-laborales-asperger", "amistad-asperger", "intereses-especiales-asperger"]
 keywords: ["asperger vs autismo", "asperger vs autismo autismo", "perfil asperger asperger vs autismo"]
-bloques: ["F", "A"]
 schema_questions:
-  - question: "¿Qué es asperger vs autismo en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es asperger vs autismo algo que se puede curar?"
-    answer: "No. asperger vs autismo forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Cuál es la diferencia entre Asperger y autismo?"
+    answer: "Comparten base neurológica pero no son lo mismo en la experiencia cotidiana. El perfil Asperger incluye lenguaje fluido desde la infancia, cognición frecuentemente muy capaz y un camuflaje social intenso que hace el perfil menos visible. Otros perfiles autistas pueden tener necesidades de apoyo y experiencias cotidianas muy diferentes."
+  - question: "¿Por qué ya no existe el diagnóstico oficial de Asperger?"
+    answer: "Desde el DSM-5 (2013) fue absorbido dentro del Trastorno del Espectro Autista. En la práctica, quien recibe evaluación hoy obtiene 'TEA nivel 1', no 'Asperger'. Sin embargo, la CIE-11 — usada en Europa y muchos países hispanohablantes — mantiene el Síndrome de Asperger como categoría separada."
+  - question: "¿Asperger es lo mismo que autismo de alto funcionamiento?"
+    answer: "No exactamente. Alto funcionamiento es un término problemático porque mide según estándares neurotípicos y puede invisibilizar dificultades reales. Una persona Asperger que funciona bien desde fuera puede gestionar un agotamiento enorme que nadie ve. El perfil Asperger tiene características específicas que ese término aplana."
+  - question: "¿Importa el término Asperger si ya no es diagnóstico oficial?"
+    answer: "Sí, en la medida en que sirva. Si Asperger describe mejor tu experiencia y te conecta con una comunidad y un marco de comprensión, úsalo. El diagnóstico es una herramienta de comprensión, no una etiqueta de identidad obligatoria. Lo que importa es que el término que uses describa tu experiencia real."
 ---
 
 ## Asperger vs. autismo: qué son y en qué se diferencian

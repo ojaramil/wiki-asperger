@@ -7,11 +7,13 @@ keywords: ["alexitimia asperger", "alexitimia asperger autismo", "perfil asperge
 bloques: ["G", "F"]
 schema_questions:
   - question: "¿Qué es la alexitimia en el perfil Asperger?"
-    answer: "La alexitimia es la dificultad para identificar, nombrar y describir las propias emociones. No significa no sentir nada — significa no poder acceder verbalmente a lo que se siente. Es frecuente en el perfil Asperger y genera malentendidos en relaciones porque la persona siente pero no puede explicar qué está sintiendo."
+    answer: "Es la dificultad para identificar, nombrar y describir las propias emociones. No significa no sentir nada — significa que el trayecto entre lo que siente el cuerpo y el lenguaje es confuso o inaccesible. La emoción existe; la etiqueta no llega con claridad."
   - question: "¿La alexitimia significa que no siento nada?"
-    answer: "No. Las personas Asperger con alexitimia sienten emociones con la misma o mayor intensidad que cualquier otra persona. La dificultad está en el acceso verbal: saben que algo pasa, pero no pueden nombrarlo ni describirlo con precisión. La emoción existe; la etiqueta no llega."
+    answer: "No. Las emociones existen — a veces con mayor intensidad que en otras personas. Lo que no llega con claridad es la etiqueta. El cuerpo siente. El lenguaje no puede seguirle el ritmo. La diferencia entre frialdad emocional y alexitimia es exactamente esa."
   - question: "¿La alexitimia afecta las relaciones?"
-    answer: "Sí, de manera significativa. Cuando alguien pregunta '¿cómo te sientes?' y la respuesta honesta es 'no lo sé', la otra persona puede interpretarlo como indiferencia o evasión. Entender que la alexitimia es una dificultad de acceso, no de ausencia, cambia completamente la dinámica."
+    answer: "Sí. Principalmente porque la otra persona interpreta el silencio emocional como indiferencia. Entender que la alexitimia es una dificultad de acceso — no de ausencia de emoción — cambia la dinámica completamente. Muchas parejas describen un cambio real cuando comprenden esto."
+  - question: "¿Cómo puedo identificar mejor mis emociones siendo Asperger?"
+    answer: "Registrar estados físicos — tensión, fatiga, ritmo cardíaco — y relacionarlos con eventos del día ayuda a construir el mapa. Usar listas de emociones como referencia para encontrar el término que mejor describe lo que ya está en el cuerpo. El proceso es lento pero mejora con práctica."
 ---
 
 La alexitimia es la dificultad para identificar, nombrar y describir las propias emociones. No es no sentir nada — es no poder acceder a lo que se siente con suficiente precisión como para ponerlo en palabras.

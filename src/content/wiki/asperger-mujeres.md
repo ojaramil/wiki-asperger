@@ -6,12 +6,14 @@ related: ["rechazo-social-asperger", "senales-sociales-asperger", "sensibilidad-
 keywords: ["asperger mujeres", "asperger mujeres autismo", "perfil asperger asperger mujeres"]
 bloques: ["A", "F"]
 schema_questions:
-  - question: "¿Qué es asperger mujeres en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es asperger mujeres algo que se puede curar?"
-    answer: "No. asperger mujeres forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Por qué el perfil Asperger en mujeres no se parece al manual?"
+    answer: "Porque los criterios diagnósticos se construyeron sobre una muestra casi exclusivamente masculina. Las mujeres Asperger tienden a presentar más camuflaje social, intereses más aceptados socialmente y dificultades más hacia adentro: agotamiento invisible, ansiedad de fondo, sensación constante de estar haciendo una actuación sin conocer el guión."
+  - question: "¿Por qué se diagnostica menos a las mujeres Asperger?"
+    answer: "El camuflaje social femenino hace el perfil menos visible en consulta. Muchas presentan primero ansiedad o depresión, que reciben atención antes que el perfil subyacente. Y muchos profesionales siguen aplicando el estereotipo masculino como referencia. El resultado es años de diagnósticos parciales antes de llegar al correcto."
+  - question: "¿El masking es más intenso en mujeres Asperger?"
+    answer: "Sí, de forma consistente. Las expectativas de socialización femenina son más exigentes desde edades tempranas, lo que genera más presión para camuflarse. El resultado es un masking más intenso, más temprano y con un costo acumulativo mayor que deriva en agotamiento crónico, ansiedad y crisis de identidad."
+  - question: "¿Cómo es la maternidad con perfil Asperger?"
+    answer: "Variable. Hay mujeres Asperger que encuentran conexión profunda en la maternidad. Otras viven la sobrecarga sensorial y la impredecibilidad de un niño pequeño como genuinamente muy difícil. Lo consistente es la necesidad de apoyo explícito y concreto — no dado por supuesto — y de espacios de recuperación reales."
 ---
 
 ## Asperger en mujeres: por qué no se parece al manual

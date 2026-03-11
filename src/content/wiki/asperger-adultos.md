@@ -6,12 +6,14 @@ related: ["rupturas-asperger", "rechazo-social-asperger", "senales-sociales-aspe
 keywords: ["asperger adultos", "asperger adultos autismo", "perfil asperger asperger adultos"]
 bloques: ["A", "F"]
 schema_questions:
-  - question: "¿Qué es asperger adultos en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es asperger adultos algo que se puede curar?"
-    answer: "No. asperger adultos forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Qué significa ser Asperger adulto?"
+    answer: "Es haber llegado al trabajo, las relaciones y la vida independiente sin que nadie explicara el manual. Y seguir funcionando — muchas veces bien en papel — con un sistema nervioso que el entorno no diseñó para ti. El perfil no desaparece con la edad: cambia el contexto en que opera."
+  - question: "¿Por qué muchos adultos Asperger se diagnostican tarde?"
+    answer: "Los criterios diagnósticos históricos estaban sesgados hacia presentaciones más visibles. Los perfiles que compensaban bien — buenas notas, sin problemas de conducta — pasaban por debajo del radar. Muchas personas Asperger aprendieron a enmascarar muy pronto, lo que hacía el perfil aún menos detectable."
+  - question: "¿Qué cambia después del diagnóstico Asperger en la adultez?"
+    answer: "Varía según la persona, pero hay algo casi universal: el acceso a un marco que explica sin culpar. Muchas decisiones del pasado, fracasos relacionales y agotamiento acumulado adquieren una lógica diferente. No desaparecen, pero se reinterpretan. Para muchos es el inicio de algo más habitable."
+  - question: "¿Puedo tener una vida adulta plena siendo Asperger?"
+    answer: "Sí. Plena no significa sin dificultades — significa construida sobre lo que de verdad importa. Muchos adultos Asperger encuentran trabajos donde el perfil es una ventaja, relaciones que funcionan con su formato propio y formas de vida que respetan su sistema nervioso. Lo que marca la diferencia es tener el marco para entender el perfil."
 ---
 
 ## ¿Qué significa ser Asperger adulto?

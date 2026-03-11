@@ -6,12 +6,14 @@ related: ["soledad-interior-asperger", "asperger-vs-autismo", "buscar-profesiona
 keywords: ["amistad asperger", "amistad asperger autismo", "perfil asperger amistad asperger"]
 bloques: ["B", "A", "F"]
 schema_questions:
-  - question: "¿Qué es amistad en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es amistad algo que se puede curar?"
-    answer: "No. amistad forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Cómo es la amistad en el perfil Asperger?"
+    answer: "Las personas Asperger pueden tener amistades profundas y duraderas. Lo que cambia es el formato: menos cantidad, más intensidad, y tolerancia muy baja para relaciones sin sustancia real. La frecuencia no es la métrica. La profundidad sí."
+  - question: "¿Por qué se me da mal mantener amistades siendo Asperger?"
+    answer: "El perfil Asperger tiende a pasar por alto el mantenimiento invisible que requieren las amistades: mensajes sin motivo concreto, preguntar cómo está alguien, recordar fechas. No es desinterés — es que ese formato no encaja en el modelo de lo que hace real una amistad. Pero para el otro, su ausencia se lee como abandono."
+  - question: "¿Es normal tener muy pocos amigos siendo Asperger?"
+    answer: "Sí, es muy frecuente. No porque no se quiera conexión, sino porque el estándar es diferente: pocas relaciones profundas en lugar de muchas superficiales es una forma completamente válida de relacionarse. El problema aparece cuando esa soledad no es elegida sino el resultado de amistades perdidas sin entender por qué."
+  - question: "¿Pueden dos personas Asperger ser buenas amigas?"
+    answer: "Sí, y a menudo esas amistades tienen una calidad difícil de encontrar en otro formato. Dos cerebros Asperger suelen compartir las mismas expectativas: el silencio no significa problema, se puede retomar desde donde se dejó, la honestidad directa no es un ataque. El marco base ya está alineado."
 ---
 
 ## ¿Cómo es la amistad en el perfil Asperger?

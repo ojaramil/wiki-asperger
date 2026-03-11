@@ -7,11 +7,13 @@ keywords: ["agotamiento masking asperger", "agotamiento masking asperger autismo
 bloques: ["B", "F"]
 schema_questions:
   - question: "¿Qué es el agotamiento por masking en el perfil Asperger?"
-    answer: "El agotamiento por masking es el coste energético de mantener durante horas una adaptación activa del comportamiento para encajar en expectativas sociales neurotípicas. No es cansancio ordinario — es el resultado de un procesamiento constante que no se automatiza: cada gesto, cada tono de voz, cada reacción, monitoreado y ajustado en tiempo real durante toda la jornada."
+    answer: "Es el coste energético de adaptar activamente el comportamiento durante horas para encajar en expectativas neurotípicas. Para el cerebro Asperger ese procesamiento no se automatiza — cada gesto, tono y reacción se monitorea en tiempo real. Un día de trabajo con masking intenso consume el doble que uno sin él."
   - question: "¿El agotamiento por masking puede causar burnout?"
-    answer: "Sí. El burnout Asperger está directamente relacionado con el masking sostenido durante períodos largos sin recuperación suficiente. Cuando el sistema nervioso no tiene espacio para volver a su estado base, el agotamiento se acumula hasta un punto de quiebre que puede incluir incapacidad para trabajar, retirada social completa, pérdida de habilidades sociales previamente enmascaradas y deterioro de la salud física."
+    answer: "Sí, directamente. El burnout Asperger es con frecuencia el resultado de masking sostenido sin recuperación suficiente durante meses o años. No es un mal período — es un sistema que llegó al límite. La recuperación suele ser más larga y profunda que la de un agotamiento laboral ordinario."
   - question: "¿Se puede hacer menos masking sin perder el trabajo?"
-    answer: "Depende del entorno, pero en muchos casos hay margen que no se usa porque no se conoce. Identificar qué partes del masking son indispensables para el contexto laboral específico y cuáles son hábitos automáticos de sobre-adaptación permite reducir la carga gradualmente. Un entorno que conoce el perfil Asperger permite más autenticidad. Uno que no lo conoce puede requerir una conversación."
+    answer: "En muchos casos hay más margen del que se cree. Identificar qué partes del masking son realmente indispensables y cuáles son hábitos de sobre-adaptación permite reducir la carga gradualmente. Lo que el entorno realmente necesita suele ser mucho menos que lo que el cerebro Asperger se exige."
+  - question: "¿Cuánto tiempo se necesita para recuperarse del agotamiento por masking?"
+    answer: "Varía según la intensidad del día y si hubo micro-descansos durante la jornada. Lo consistente es que la recuperación requiere ausencia real de demanda social — no descanso activo sino silencio y ausencia de procesamiento social. Para algunos tarda horas, para otros un día o más."
 ---
 
 El agotamiento por masking es el coste energético de pasar horas adaptando activamente el comportamiento para encajar. No es cansancio de trabajar mucho — es el cansancio específico de hacer dos cosas simultáneamente durante toda la jornada: existir en el entorno y gestionarse a uno mismo dentro de él.

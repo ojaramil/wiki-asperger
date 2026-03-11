@@ -7,11 +7,13 @@ keywords: ["autoconciencia asperger", "autoconciencia asperger autismo", "perfil
 bloques: ["A", "F"]
 schema_questions:
   - question: "¿Las personas Asperger tienen buena autoconciencia?"
-    answer: "Sí y no. El perfil Asperger suele tener una autoconciencia intelectual muy desarrollada — capacidad de observar y analizar el propio comportamiento con detalle. Pero la autoconciencia emocional en tiempo real puede ser baja: se procesa lo que se siente con demora, después del momento. El cerebro Asperger sabe mucho sobre cómo funciona, pero no siempre en el instante en que necesita saberlo."
-  - question: "¿La autoconciencia ayuda o perjudica en situaciones sociales?"
-    answer: "Ambas cosas. La autoconciencia permite detectar qué comportamientos funcionan y cuáles no, aprender de la experiencia y ajustar gradualmente. Pero en tiempo real, una autoconciencia muy activa puede interferir: estar analizando cómo uno se ve mientras simultáneamente participa en la conversación es cognitivamente costoso y puede generar ansiedad. El exceso de autoconciencia tiene su propio coste."
+    answer: "Alta en lo intelectual, variable en lo emocional en tiempo real. El cerebro Asperger suele observar sus propios procesos con gran precisión cuando los revisa retrospectivamente. En el momento, el acceso puede ser menor — la emoción existe pero la etiqueta llega después."
+  - question: "¿La autoconciencia ayuda o perjudica en situaciones sociales siendo Asperger?"
+    answer: "Ambas cosas. Ayuda a aprender de la experiencia y ajustar gradualmente. Perjudica cuando se activa en tiempo real con demasiada intensidad — el análisis simultáneo tiene un coste cognitivo real que puede generar más ansiedad que claridad. El objetivo no es más autoconciencia sino autoconciencia más útil."
   - question: "¿Cómo desarrollar autoconciencia emocional siendo Asperger?"
-    answer: "Registrar señales corporales asociadas a estados emocionales — tensión, ritmo cardíaco, postura — y relacionarlas con los eventos del día ayuda a construir un mapa emocional propio. También ayuda revisar situaciones después, no en el momento, cuando el sistema tiene más recursos disponibles. La autoconciencia emocional Asperger suele funcionar mejor en diferido que en simultaneidad."
+    answer: "Trabajarla en diferido, no en simultáneo. Revisar situaciones después — qué pasó, qué se sintió, qué señales corporales hubo — construye un mapa emocional más preciso con el tiempo. La autoconciencia emocional Asperger funciona mejor retrospectivamente que en tiempo real."
+  - question: "¿Qué cambia en la autoconciencia después del diagnóstico Asperger?"
+    answer: "El marco cambia la interpretación de la propia experiencia. Lo que antes se procesaba como 'soy raro' o 'algo está mal en mí' pasa a entenderse con precisión: este entorno es difícil por estas razones, esta reacción tiene sentido dado cómo funciona mi sistema nervioso. No resuelve nada automáticamente, pero permite trabajar con información más precisa." 
 ---
 
 La autoconciencia Asperger tiene una paradoja central: es muy alta en unas dimensiones y puede ser muy baja en otras. El cerebro Asperger es capaz de observar sus propios procesos con una precisión inusual — pero no siempre en el momento en que ocurren.

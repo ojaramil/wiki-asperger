@@ -6,12 +6,14 @@ related: ["comunidad-asperger", "literalidad-asperger", "intimidad-emocional-asp
 keywords: ["ansiedad social asperger", "ansiedad social asperger autismo", "perfil asperger ansiedad social asperger"]
 bloques: ["E", "B", "F"]
 schema_questions:
+  - question: "¿Qué es la ansiedad social en el perfil Asperger?"
+    answer: "Es la respuesta de anticipación y malestar ante situaciones sociales — no por timidez, sino como consecuencia de años navegando un mundo social costoso e impredecible. No es un rasgo del perfil Asperger. Es lo que le pasa al perfil después de años de malentendidos, rechazo y agotamiento por masking."
   - question: "¿La ansiedad social Asperger se puede tratar?"
-    answer: "Sí, aunque el tratamiento más efectivo difiere de la terapia para fobia social estándar. La ansiedad social Asperger tiene causas específicas — el historial de malentendidos y rechazo, el agotamiento del masking, la dificultad de decodificar reglas sociales implícitas — y responde mejor a intervenciones que trabajan esas causas específicas que a la exposición social gradual estándar. Conocer el propio perfil y reducir el masking puede tener un impacto significativo, incluso sin tratamiento formal."
+    answer: "Sí, aunque el abordaje más efectivo es específico al perfil. La exposición social gradual estándar puede no funcionar porque no resuelve las causas reales: el historial de malentendidos, el agotamiento del masking y la dificultad con reglas implícitas. Conocer el propio perfil y reducir el masking tiene un impacto significativo."
   - question: "¿Es normal evitar situaciones sociales siendo Asperger?"
-    answer: "Es comprensible y frecuente. Cuando la experiencia repetida de situaciones sociales incluye malentendidos, rechazo o agotamiento significativo, evitarlas es una respuesta lógica de un sistema que intenta protegerse. El problema aparece cuando la evitación se vuelve tan amplia que reduce significativamente la calidad de vida. El objetivo no es eliminar la evitación a cualquier precio — es decidir qué situaciones merecen el coste y cuáles no, con más agencia que ansiedad."
-  - question: "¿Cómo distinguir ansiedad social de introversión Asperger?"
-    answer: "La introversión es una preferencia por entornos tranquilos y tiempo a solas. La ansiedad social incluye anticipación angustiosa, evitación basada en miedo al resultado negativo, y un proceso de revisión posterior que puede durar horas. Una persona Asperger introvertida prefiere no ir a la fiesta porque eso la agota. Una persona Asperger con ansiedad social pasa la semana antes de la fiesta pensando en todo lo que puede salir mal, y horas después analizando cada cosa que dijo. Las dos experiencias son diferentes aunque coexistan con frecuencia."
+    answer: "Es comprensible y frecuente. La evitación es una respuesta lógica cuando la experiencia repetida incluye coste real. El objetivo no es eliminar la evitación incondicionalmente — es poder decidir qué situaciones merecen el coste con más agencia que ansiedad."
+  - question: "¿Cómo distinguir ansiedad social de introversión en el perfil Asperger?"
+    answer: "La introversión es preferencia — no querer ir porque agota. La ansiedad social incluye anticipación angustiosa antes del evento y revisión posterior que puede durar horas. Una persona Asperger introvertida prefiere no ir. Una con ansiedad social pasa días antes pensando en lo que puede salir mal."
 ---
 
 ## ¿Qué es la ansiedad social Asperger?

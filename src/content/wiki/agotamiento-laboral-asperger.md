@@ -6,12 +6,14 @@ related: ["rupturas-asperger", "fortalezas-asperger", "neurodiversidad-asperger"
 keywords: ["agotamiento laboral asperger", "agotamiento laboral asperger autismo", "perfil asperger agotamiento laboral asperger"]
 bloques: ["C", "B", "F"]
 schema_questions:
-  - question: "¿Qué es agotamiento laboral en el perfil Asperger?"
-    answer: "Es una manifestación propia del perfil neurocognitivo Asperger, una forma válida y diferente de procesar la realidad en comparación con mentes neurotípicas."
-  - question: "¿Es agotamiento laboral algo que se puede curar?"
-    answer: "No. agotamiento laboral forma parte de la neurodivergencia, no es algo para curar ni corregir, sino para comprender y adaptar positivamente en el entorno."
-  - question: "¿Cómo impacta esto en la vida social y laboral?"
-    answer: "Puede generar diferencias en la comunicación o procesamiento, pero con comprensión y herramientas adecuadas, se alcanzan relaciones sólidas y desarrollo pleno."
+  - question: "¿Qué es el agotamiento laboral en el perfil Asperger?"
+    answer: "Es el resultado de operar de forma sostenida en entornos diseñados para otro sistema nervioso. El cerebro Asperger realiza en paralelo procesamiento sensorial constante, análisis social activo y masking durante horas. Eso agota aunque el trabajo sea fácil en papel."
+  - question: "¿Por qué me agoto más que mis compañeros haciendo lo mismo?"
+    answer: "Porque no estás haciendo lo mismo. Estás haciendo el trabajo visible más procesamiento sensorial constante, análisis social activo, masking y gestión de la ambigüedad. Tus compañeros neurotípicos hacen parte de eso de forma automatizada y con un costo neurológico mucho menor."
+  - question: "¿El agotamiento laboral Asperger es reversible?"
+    answer: "Sí, pero requiere descanso real de estímulos sociales y sensoriales, no solo cambiar de actividad. Si llega al punto de colapso, la recuperación es más larga. Reconocerlo antes marca la diferencia. Y el entorno que lo genera no cambia solo: hay que modificar algo estructural."
+  - question: "¿Cómo pido ajustes en el trabajo sin revelar que soy Asperger?"
+    answer: "No estás obligado a revelar el diagnóstico. Puedes pedir ajustes como preferencias de productividad: trabajo mejor sin interrupciones, necesito espacios silenciosos para análisis, prefiero recibir el briefing por escrito. Muchas empresas tienen protocolos que no requieren diagnóstico formal."
 ---
 
 ## ¿Qué es el agotamiento laboral Asperger?
