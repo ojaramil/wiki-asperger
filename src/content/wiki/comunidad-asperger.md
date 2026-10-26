@@ -110,3 +110,4 @@ Ocurre, y es más frecuente de lo que parece. El perfil Asperger no garantiza en
 - [Comunicacion Directa Asperger](/comunicacion-directa-asperger)
 - [Burnout Asperger](/burnout-asperger)
 - [Vida Post Diagnostico Asperger](/vida-post-diagnostico-asperger)
+- [Encuentro Mundial del Asperger 2026](/encuentro-mundial-asperger-2026)
