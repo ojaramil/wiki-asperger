@@ -33,12 +33,20 @@ function getEntradasByCluster(clusterName: string) {
       Sin lenguaje clínico. Sin plantillas. Desde la experiencia real.
       Un recurso creado por personas Asperger para personas Asperger.
     </p>
-    <a
-      href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/"
-      class="hero-cta"
-    >
-      Unirme al Club →
-    </a>
+    <div class="hero-actions">
+      <a
+        href="https://www.aspergerparaasperger.org/grupo-club-social-y-educativo-virtual-asperger-para-asperger/"
+        class="hero-cta"
+      >
+        Unirme al Club →
+      </a>
+      <a
+        href="https://www.encuentromundialdelasperger.org/2026"
+        class="hero-cta hero-cta-secondary"
+      >
+        Encuentro Mundial del Asperger 2026 →
+      </a>
+    </div>
   </section>
 
   <!-- Buscador -->
@@ -153,6 +161,23 @@ function getEntradasByCluster(clusterName: string) {
   border-radius: 6px;
   text-decoration: none;
   transition: background 0.2s;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.hero-cta-secondary {
+  background: transparent;
+  color: var(--color-accent);
+  border: 1px solid var(--color-accent);
+}
+
+.hero-cta-secondary:hover {
+  background: var(--color-accent);
+  color: white;
 }
 
 .hero-cta:hover {

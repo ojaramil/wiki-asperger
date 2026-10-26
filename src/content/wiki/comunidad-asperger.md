@@ -46,6 +46,7 @@ Algunas vías concretas:
 - Asociaciones de autismo y Asperger locales o regionales — muchas tienen grupos de adultos específicamente
 - Grupos de neurodivergencia en ciudades grandes, a veces organizados por psicólogos especializados
 - Comunidades construidas alrededor de intereses compartidos donde hay alta concentración de perfiles Asperger: ciertos tipos de juegos de mesa, comunidades de tecnología, ciencia ficción, rol, música clásica
+- Eventos internacionales pensados para el perfil, como el [Encuentro Mundial del Asperger y su edición 2026](https://www.encuentromundialdelasperger.org/2026), que reúne a personas Asperger de distintos países
 
 La segunda vía suele encontrarse dentro de la primera: la comunidad online lleva a veces a encuentros offline.
 
